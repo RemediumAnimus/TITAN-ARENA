@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/reset.css" >
 		<link rel="stylesheet" href="css/animations.css" >
-		<link rel="stylesheet" href="js/vendor/tooltipster/tooltipster.css" >
 		<link rel="stylesheet" href="js/vendor/tipsy/tipsy.css" >
+		<link rel="stylesheet" href="js/vendor/qtip/jquery.qtip.css" >
 
         <!-- Template styles -->
 		<link rel="stylesheet" href="template-styles.css" >
@@ -24,8 +24,9 @@
         <!-- Scripts -->
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
         <script src="js/vendor/tabby/tabby.js"></script>
-        <script src="js/vendor/tooltipster/jquery.tooltipster.min.js"></script>
         <script src="js/vendor/tipsy/jquery.tipsy.js"></script>
+        <script src="js/vendor/qtip/imagesloaded.pkg.min.js"></script>
+        <script src="js/vendor/qtip/jquery.qtip.js"></script>
 
         <script src="js/vendor/scripts2.js"></script>
 
@@ -48,699 +49,1239 @@
                 <div class="tabs-content">
                     <div class="n-plan__plan tabs-pane active" id="tab1">
 
-                        <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
-                        <div class="n-plan__plan__elevator icoMap"></div>
-                        <div class="n-plan__plan__mainExit1 icoMap"></div>
-                        <div class="n-plan__plan__mainExit2 icoMap"></div>
-                        <div class="n-plan__plan__mainExit3 icoMap"></div>
+                        <div class="n-plan__inside">
 
-                        <div class="n-plan__plan__svg">
-                             <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
-                             <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
+                            <div class="n-plan__plan__elevator icoMap"></div>
+                            <div class="n-plan__plan__mainExit1 icoMap"></div>
+                            <div class="n-plan__plan__mainExit2 icoMap"></div>
+                            <div class="n-plan__plan__mainExit3 icoMap"></div>
 
-                        <svg width="650px" height="490px" viewBox="0 0 650 490" class="pos">
-                            <style type="text/css">
-                                .st98{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;opacity: 0}
-                                .st99{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
-                                .st1 {fill-rule:evenodd;clip-rule:evenodd;fill:#9C5897;display:none;}
-                                .st2 {fill-rule:evenodd;clip-rule:evenodd;fill:#069cd8;}
-                                .st3 {fill-rule:evenodd;clip-rule:evenodd;fill:#b22e82;}
-                                .st4 {fill-rule:evenodd;clip-rule:evenodd;fill:#ed8e23;}
-                                .st90 {fill:#fff;}
-                            </style>
-                                <path class="st1 hover" original-title="СОФИЯ" d="M293.1,366h30v15h-30V366z"/>
-                                <path class="st1 hover" original-title="ЦВЕТНОЙ" d="M416.1,366h30v15h-30V366z"/>
-                                <path class="st1 hover" original-title="-" d="M533.1,343l12,12l-21,21l-12-12L533.1,343z"/>
-                                <path class="st1 hover" original-title="-" d="M583.1,293l12,12l-21,21l-12-12L583.1,293z"/>
-                                <path class="st1 hover" original-title="ASKENT" d="M527.1,205h30v15h-30V205z"/>
-                                <path class="st1 hover" original-title="АВТОГАДЖЕТ" d="M340.1,205h19v15h-19V205z"/>
-                                <path class="st1 hover" original-title="-" d="M297.1,205h30v15h-30V205z"/>
-                                <path class="st1 hover" original-title="COFFEE LIKE" d="M191.1,205h19v15h-19V205z"/>
-                                <path class="st1 hover" original-title="АДАМАС" d="M244.1,276h-76v9c0,0,0.4,3.3,4,7c9.7,9.9,38.9,37.6,55,53c11,10.5,17,9,17,9V276z"/>
-                                <path class="st1 hover" original-title="BOGACHO" d="M245.1,314h40v40h-40V314z"/>
-                                <path class="st1 hover" original-title="ILE DE BEAUTE" d="M327.1,313h41v-37h-123v37h41v41h41V313z"/>
-                                <path class="st1 hover" original-title="МАРТИНИКА" d="M328.1,314h40v21h-40V314z"/>
-                                <path class="st1 hover" original-title="HAROLD" d="M328.1,336h40v18h-40V336z"/>
-                                <path class="st1 hover" original-title="C-STORE" d="M411.1,275h39v38h-39V275z"/>
-                                <path class="st1 hover" original-title="СЧАСТЛИВЫЙ ВЗГЛЯД" d="M411.1,314h39v21h-39V314z"/>
-                                <path class="st1 hover" original-title="PANDORA" d="M411.1,336h39v18h-39V336z"/>
-                                <path class="st1 hover" original-title="VITACCI" d="M451.1,308h41v46h-41V308z"/>
-                                <path class="st1 hover" original-title="LEO VENTONI" d="M547.1,314l-41,40h-13v-40H547.1z"/>
-                                <path class="st1 hover" original-title="МЕДВЕДЬ" d="M573.1,275h-80v38h55l25-24V275z"/>
-                                <path class="st1 hover" original-title="SOHO" d="M533.1,235h40v39h-40V235z"/>
-                                <path class="st1 hover" original-title="CORSOCOMO" d="M493.1,239v35h39v-39h-32l-4,4H493.1z"/>
-                                <path class="st1 hover" original-title="MULTIVARKA.PRO" d="M470.1,239h22v68h-22V239z"/>
-                                <path class="st1 hover" original-title="ZINGER" d="M451.1,239h18v68h-18V239z"/>
-                                <path class="st1 hover" original-title="СВЯЗНОЙ" d="M411.1,239h39v35h-39V239z"/>
-                                <path class="st1 hover" original-title="БЮСТЬЕ" d="M328.1,239h40v36h-40V239z"/>
-                                <path class="st1 hover" original-title="МТС" d="M308.1,239h19v36h-19V239z"/>
-                                <path class="st1 hover" original-title="КЛИНОК" d="M288.1,239h19v36h-19V239z"/>
-                                <path class="st1 hover" original-title="КАБИНОТЬЕ" d="M266.1,239v36h21v-36H266.1z"/>
-                                <path class="st1 hover" original-title="СТИЛЬПАРК" d="M230.1,255h-10v20h45v-36h-25v-4h-10V255z"/>
-                                <path class="st1 hover" original-title="ACCESSORISES" d="M210.1,255h9v20h-28v-40h19V255z"/>
-                                <path class="st1 hover" original-title="L'OCCITANE" d="M168.1,275v-40h22v40H168.1z"/>
-                                <path class="st1 hover" original-title="H&M" d="M189.1,424v47h-40c-35.3,0-64-28.7-64-64V234h42v61c0,0-1.9,12.1,6,20c17.5,17.6,53.4,51,70,67
-                                    c11.4,11,18,14,18,14h18v28H189.1z"/>
-                                <path class="st1 hover" original-title="MASCOTTE" d="M286.1,458h-38v-62h38V458z"/>
-                                <path class="st1 hover" original-title="WESTFALIKA" d="M287.1,458h6v8h8v5h28v-75h-42V458z"/>
-                                <path class="st1 hover" original-title="МЕГАФОН" d="M368.1,422h-20v10h-18v-36h38V422z"/>
-                                <path class="st1 hover" original-title="ПОСУДА" d="M349.1,433v-10h19v48h-38v-38H349.1z"/>
-                                <path class="st1 hover" original-title="UP STYLE" d="M430.1,396h-21v75h41v-37h-20V396z"/>
-                                <path class="st1 hover" original-title="BEELINE" d="M431.1,396h19v37h-19V396z"/>
-                                <path class="st1 hover" original-title="PODIO" d="M476.1,471v-3h11v-9h5v-63h-41v75H476.1z"/>
-                                <path class="st1 hover" original-title="АДАМАС" d="M590.1,367v51h-57v-5h-29v-17h16c0,0,3.1,0.5,6-2c10.2-8.9,27-27,27-27H590.1z"/>
-                                <path class="st1 hover" original-title="ЭКОНИКА" d="M645.1,316v50h-91l51-50H645.1z"/>
-                                <path class="st1 hover" original-title="-" d="M645.1,276h-29v10c0,0-1.9,13.6-3,18c-2,8-7,11-7,11h39V276z"/>
-                                <path class="st1 hover" original-title="МИР ЗАКОЛОК" d="M645.1,235c-0.4,0-29,0-29,0v40h29C645.1,275,645.4,235,645.1,235z"/>
-                                <path class="st1 hover" original-title="СЕРВИСНАЯ ЗОНА, ХИМЧИСТКА, РЕМОНТ ЧАСОВ, ПОЧТОВОЕ ОТДЕЛЕНЕ, БИЛЕТНАЯ КАССА, КЛЮЧИ" d="M638.1,126v-19h-31v79h38v-60H638.1z"/>
-                                <path class="st1 hover" original-title="KARI" d="M606.1,186h-54v-19h-22v-60h76V186z"/>
-                                <path class="st1 hover" original-title="4 ЛАПЫ" d="M493.1,149h26v37h-26V149z"/>
-                                <path class="st1 hover" original-title="SPAR" d="M308.1,186v-38h-99V76h44V38h240v18h26v92h-27v38H308.1z"/>
-                                <path class="st1 hover" original-title="COFEEMAN" d="M286.1,186v-22h-21v-15h42v37H286.1z"/>
-                                <path class="st1 hover" original-title="АПТЕКА МК" d="M265.1,165h20v21h-20V165z"/>
-                                <path class="st1 hover" original-title="ГРАНД ПРИ" d="M248.1,149h16v37h-16V149z"/>
-                                <path class="st1 hover" original-title="FASHION STYLE" d="M231.1,149h16v37h-16V149z"/>
-                                <path class="st1 hover" original-title="МОСКОВСКИЙ ЮВЕЛИРНЫЙ ЗАВОД" d="M209.1,149h21v37h-21V149z"/>
-                                <path class="st1 hover" original-title="ADIDAS" d="M128.1,186h71V69h-71V27l-73,31v49h73V186z"/>
-                                <path class="st1 hover" original-title="RIVE GAUCHE" d="M55.1,120v-12h72v78h-91l-16-43h50v-23H55.1z"/>
-                                <text transform="matrix(1 0 0 1 86.0555 152.0001)" class="st2 st3 st90 icoMap">1</text>
-                                <text transform="matrix(1 0 0 1 159.0555 123.0001)" class="st2 st3 st90 icoMap">2</text>
-                                <text transform="matrix(1 0 0 1 362.0555 104.0001)" class="st2 st3 st90 icoMap">8</text>
-                                <text transform="matrix(1 0 0 1 217.0555 170.0001)" class="st2 st3 st90 icoMap">3</text>
-                                <text transform="matrix(1 0 0 1 235.0555 170.0001)" class="st2 st3 st90 icoMap">4</text>
-                                <text transform="matrix(1 0 0 1 252.0555 170.0001)" class="st2 st3 st90 icoMap">5</text>
-                                <text transform="matrix(1 0 0 1 293.0554 170.0001)" class="st2 st3 st90 icoMap">6</text>
-                                <text transform="matrix(1 0 0 1 272.0554 180.0001)" class="st2 st3 st90 icoMap">7</text>
-                                <text transform="matrix(1 0 0 1 502.5554 173.0001)" class="st2 st3 st90 icoMap">9</text>
-                                <text transform="matrix(1 0 0 1 562.0554 149)" class="st2 st3 st90 icoMap">10</text>
-                                <text transform="matrix(1 0 0 1 610.0554 125)" class="st2 st3 st90 icoMap">11</text>
-                                <text transform="matrix(1 0 0 1 630.0554 140)" class="st2 st3 st90 icoMap">55</text>
-                                <text transform="matrix(1 0 0 1 610.0554 153)" class="st2 st3 st90 icoMap">56</text>
-                                <text transform="matrix(1 0 0 1 630.0554 167)" class="st2 st3 st90 icoMap">57</text>
-                                <text transform="matrix(1 0 0 1 610.0554 182)" class="st2 st3 st90 icoMap">58</text>
-                                <text transform="matrix(1 0 0 1 630.0554 182)" class="st2 st3 st90 icoMap">59</text>
-                                <text transform="matrix(1 0 0 1 192.0555 217.5)" class="st2 st3 st90 icoMap">47</text>
-                                <text transform="matrix(1 0 0 1 303.5554 217.5)" class="st2 st3 st90 icoMap">48</text>
-                                <text transform="matrix(1 0 0 1 341.0555 216.9999)" class="st2 st3 st90 icoMap">49</text>
-                                <text transform="matrix(1 0 0 1 533.0554 216.9999)" class="st2 st3 st90 icoMap">50</text>
-                                <text transform="matrix(1 0 0 1 116.0555 375.9999)" class="st2 st3 st90 icoMap">23</text>
-                                <text transform="matrix(1 0 0 1 171.0555 262.0001)" class="st2 st3 st90 icoMap">24</text>
-                                <text transform="matrix(1 0 0 1 195.0555 269.0001)" class="st2 st3 st90 icoMap">25</text>
-                                <text transform="matrix(1 0 0 1 239.0554 262.0001)" class="st2 st3 st90 icoMap">26</text>
-                                <text transform="matrix(1 0 0 1 269.0554 262.0001)" class="st2 st3 st90 icoMap">27</text>
-                                <text transform="matrix(1 0 0 1 290.0554 262.0001)" class="st2 st3 st90 icoMap">28</text>
-                                <text transform="matrix(1 0 0 1 310.0554 262.0001)" class="st2 st3 st90 icoMap">29</text>
-                                <text transform="matrix(1 0 0 1 340.0555 262.0001)" class="st2 st3 st90 icoMap">30</text>
-                                <text transform="matrix(1 0 0 1 423.0555 262.0001)" class="st2 st3 st90 icoMap">31</text>
-                                <text transform="matrix(1 0 0 1 452.0554 281.0001)" class="st2 st3 st90 icoMap">32</text>
-                                <text transform="matrix(1 0 0 1 472.5554 281.0001)" class="st2 st3 st90 icoMap">33</text>
-                                <text transform="matrix(1 0 0 1 506.0553 262)" class="st2 st3 st90 icoMap">34</text>
-                                <text transform="matrix(1 0 0 1 545.0555 262)" class="st2 st3 st90 icoMap">35</text>
-                                <text transform="matrix(1 0 0 1 625.5554 262)" class="st2 st3 st90 icoMap">12</text>
-                                <text transform="matrix(1 0 0 1 209.0554 307)" class="st2 st3 st90 icoMap">46</text>
-                                <text transform="matrix(1 0 0 1 256.0554 337)" class="st2 st3 st90 icoMap">45</text>
-                                <text transform="matrix(1 0 0 1 297.5554 300.0001)" class="st2 st3 st90 icoMap">44</text>
-                                <text transform="matrix(1 0 0 1 340.0555 329.9998)" class="st2 st3 st90 icoMap">43</text>
-                                <text transform="matrix(1 0 0 1 340.0555 349)" class="st2 st3 st90 icoMap">42</text>
-                                <text transform="matrix(1 0 0 1 423.0555 300.0001)" class="st2 st3 st90 icoMap">41</text>
-                                <text transform="matrix(1 0 0 1 423.0555 329.9998)" class="st2 st3 st90 icoMap">40</text>
-                                <text transform="matrix(1 0 0 1 423.0555 350.5)" class="st2 st3 st90 icoMap">39</text>
-                                <text transform="matrix(1 0 0 1 462.0554 336)" class="st2 st3 st90 icoMap">38</text>
-                                <text transform="matrix(1 0 0 1 498.5554 336)" class="st2 st3 st90 icoMap">37</text>
-                                <text transform="matrix(1 0 0 1 520.0555 299.5)" class="st2 st3 st90 icoMap">36</text>
-                                <text transform="matrix(1 0 0 1 625.5554 299.9051)" class="st2 st3 st90 icoMap">13</text>
-                                <text transform="matrix(1 0 0 1 607.0554 345)" class="st2 st3 st90 icoMap">14</text>
-                                <text transform="matrix(1 0 0 1 573.0555 312.9998)" class="st2 st3 st90 icoMap">51</text>
-                                <text transform="matrix(1 0 0 1 522.0554 363.9999)" class="st2 st3 st90 icoMap">52</text>
-                                <text transform="matrix(1 0 0 1 422.0555 377.9999)" class="st2 st3 st90 icoMap">53</text>
-                                <text transform="matrix(1 0 0 1 298.5554 377.9999)" class="st2 st3 st90 icoMap">54</text>
-                                <text transform="matrix(1 0 0 1 260.0554 432)" class="st2 st3 st90 icoMap">22</text>
-                                <text transform="matrix(1 0 0 1 301.5554 432)" class="st2 st3 st90 icoMap">21</text>
-                                <text transform="matrix(1 0 0 1 341.0555 415.0001)" class="st2 st3 st90 icoMap">20</text>
-                                <text transform="matrix(1 0 0 1 340.0555 456)" class="st2 st3 st90 icoMap">19</text>
-                                <text transform="matrix(1 0 0 1 422.0555 455)" class="st2 st3 st90 icoMap">18</text>
-                                <text transform="matrix(1 0 0 1 433.0555 420.9999)" class="st2 st3 st90 icoMap">17</text>
-                                <text transform="matrix(1 0 0 1 462.0554 433.5)" class="st2 st3 st90 icoMap">16</text>
-                                <text transform="matrix(1 0 0 1 554.0554 395.9999)" class="st2 st3 st90 icoMap">46</text>
+                            <div class="n-plan__plan__svg">
+                                 <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
+                                 <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
 
-                            <filter id="drop-shadow">
-                              <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
-                              <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
-                              <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
-                              <feComposite in2="offsetblur" operator="in"></feComposite>
-                              <feMerge>
-                                <feMergeNode></feMergeNode>
-                                <feMergeNode in="SourceGraphic"></feMergeNode>
-                              </feMerge>
-                            </filter>
-                        </svg>
+                            <svg width="650px" height="490px" viewBox="0 0 650 490" class="pos">
+                                <style type="text/css">
+                                    .st98{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;opacity: 0}
+                                    .st99{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+                                    .st1 {fill-rule:evenodd;clip-rule:evenodd;fill:#9C5897;opacity:0;}
+                                    .st2 {fill-rule:evenodd;clip-rule:evenodd;fill:#069cd8;}
+                                    .st3 {fill-rule:evenodd;clip-rule:evenodd;fill:#b22e82;}
+                                    .st4 {fill-rule:evenodd;clip-rule:evenodd;fill:#ed8e23;}
+                                    .st90 {fill:#fff;}
+                                </style>
+                                    <path class="st1 tip hover" original-title="СОФИЯ" d="M293.1,366h30v15h-30V366z"/>
+                                    <path class="st1 tip hover" original-title="ЦВЕТНОЙ" d="M416.1,366h30v15h-30V366z"/>
+                                    <path class="st1 tip hover" original-title="-" d="M533.1,343l12,12l-21,21l-12-12L533.1,343z"/>
+                                    <path class="st1 tip hover" original-title="-" d="M583.1,293l12,12l-21,21l-12-12L583.1,293z"/>
+                                    <path class="st1 tip hover" original-title="ASKENT" d="M527.1,205h30v15h-30V205z"/>
+                                    <path class="st1 tip hover" original-title="АВТОГАДЖЕТ" d="M340.1,205h19v15h-19V205z"/>
+                                    <path class="st1 tip hover" original-title="-" d="M297.1,205h30v15h-30V205z"/>
+                                    <path class="st1 tip hover" original-title="COFFEE LIKE" d="M191.1,205h19v15h-19V205z"/>
+                                    <path class="st1 tip hover" original-title="АДАМАС" d="M244.1,276h-76v9c0,0,0.4,3.3,4,7c9.7,9.9,38.9,37.6,55,53c11,10.5,17,9,17,9V276z"/>
+                                    <path class="st1 tip hover" original-title="BOGACHO" d="M245.1,314h40v40h-40V314z"/>
+                                    <path class="st1 tip hover t2" original-title="ILE DE BEAUTE" d="M327.1,313h41v-37h-123v37h41v41h41V313z"/>
+                                    <path class="st1 tip hover" original-title="МАРТИНИКА" d="M328.1,314h40v21h-40V314z"/>
+                                    <path class="st1 tip hover" original-title="HAROLD" d="M328.1,336h40v18h-40V336z"/>
+                                    <path class="st1 tip hover" original-title="C-STORE" d="M411.1,275h39v38h-39V275z"/>
+                                    <path class="st1 tip hover" original-title="СЧАСТЛИВЫЙ ВЗГЛЯД" d="M411.1,314h39v21h-39V314z"/>
+                                    <path class="st1 tip hover" original-title="PANDORA" d="M411.1,336h39v18h-39V336z"/>
+                                    <path class="st1 tip hover" original-title="VITACCI" d="M451.1,308h41v46h-41V308z"/>
+                                    <path class="st1 tip hover" original-title="LEO VENTONI" d="M547.1,314l-41,40h-13v-40H547.1z"/>
+                                    <path class="st1 tip hover" original-title="МЕДВЕДЬ" d="M573.1,275h-80v38h55l25-24V275z"/>
+                                    <path class="st1 tip hover" original-title="SOHO" d="M533.1,235h40v39h-40V235z"/>
+                                    <path class="st1 tip hover" original-title="CORSOCOMO" d="M493.1,239v35h39v-39h-32l-4,4H493.1z"/>
+                                    <path class="st1 tip hover" original-title="MULTIVARKA.PRO" d="M470.1,239h22v68h-22V239z"/>
+                                    <path class="st1 tip hover" original-title="ZINGER" d="M451.1,239h18v68h-18V239z"/>
+                                    <path class="st1 tip hover" original-title="СВЯЗНОЙ" d="M411.1,239h39v35h-39V239z"/>
+                                    <path class="st1 tip hover" original-title="БЮСТЬЕ" d="M328.1,239h40v36h-40V239z"/>
+                                    <path class="st1 tip hover" original-title="МТС" d="M308.1,239h19v36h-19V239z"/>
+                                    <path class="st1 tip hover" original-title="КЛИНОК" d="M288.1,239h19v36h-19V239z"/>
+                                    <path class="st1 tip hover" original-title="КАБИНОТЬЕ" d="M266.1,239v36h21v-36H266.1z"/>
+                                    <path class="st1 tip hover" original-title="СТИЛЬПАРК" d="M230.1,255h-10v20h45v-36h-25v-4h-10V255z"/>
+                                    <path class="st1 tip hover" original-title="ACCESSORISES" d="M210.1,255h9v20h-28v-40h19V255z"/>
+                                    <path class="st1 tip hover" original-title="L'OCCITANE" d="M168.1,275v-40h22v40H168.1z"/>
+                                    <path class="st1 tip hover" original-title="H&M" d="M189.1,424v47h-40c-35.3,0-64-28.7-64-64V234h42v61c0,0-1.9,12.1,6,20c17.5,17.6,53.4,51,70,67
+                                        c11.4,11,18,14,18,14h18v28H189.1z"/>
+                                    <path class="st1 tip hover t3" original-title="MASCOTTE" d="M286.1,458h-38v-62h38V458z"/>
+                                    <path class="st1 tip hover" original-title="WESTFALIKA" d="M287.1,458h6v8h8v5h28v-75h-42V458z"/>
+                                    <path class="st1 tip hover" original-title="МЕГАФОН" d="M368.1,422h-20v10h-18v-36h38V422z"/>
+                                    <path class="st1 tip hover" original-title="ПОСУДА" d="M349.1,433v-10h19v48h-38v-38H349.1z"/>
+                                    <path class="st1 tip hover" original-title="UP STYLE" d="M430.1,396h-21v75h41v-37h-20V396z"/>
+                                    <path class="st1 tip hover" original-title="BEELINE" d="M431.1,396h19v37h-19V396z"/>
+                                    <path class="st1 tip hover" original-title="PODIO" d="M476.1,471v-3h11v-9h5v-63h-41v75H476.1z"/>
+                                    <path class="st1 tip hover" original-title="AMATI" d="M590.1,367v51h-57v-5h-29v-17h16c0,0,3.1,0.5,6-2c10.2-8.9,27-27,27-27H590.1z"/>
+                                    <path class="st1 tip hover" original-title="ЭКОНИКА" d="M645.1,316v50h-91l51-50H645.1z"/>
+                                    <path class="st1 tip hover" original-title="-" d="M645.1,276h-29v10c0,0-1.9,13.6-3,18c-2,8-7,11-7,11h39V276z"/>
+                                    <path class="st1 tip hover" original-title="МИР ЗАКОЛОК" d="M645.1,235c-0.4,0-29,0-29,0v40h29C645.1,275,645.4,235,645.1,235z"/>
+                                    <path class="st1 tip hover" original-title="СЕРВИСНАЯ ЗОНА, ХИМЧИСТКА, РЕМОНТ ЧАСОВ, ПОЧТОВОЕ ОТДЕЛЕНЕ, БИЛЕТНАЯ КАССА, КЛЮЧИ" d="M638.1,126v-19h-31v79h38v-60H638.1z"/>
+                                    <path class="st1 tip hover" original-title="KARI" d="M606.1,186h-54v-19h-22v-60h76V186z"/>
+                                    <path class="st1 tip hover" original-title="4 ЛАПЫ" d="M493.1,149h26v37h-26V149z"/>
+                                    <path class="st1 tip hover t1" original-title="SPAR" d="M308.1,186v-38h-99V76h44V38h240v18h26v92h-27v38H308.1z"/>
+                                    <path class="st1 tip hover" original-title="COFEEMAN" d="M286.1,186v-22h-21v-15h42v37H286.1z"/>
+                                    <path class="st1 tip hover" original-title="АПТЕКА МК" d="M265.1,165h20v21h-20V165z"/>
+                                    <path class="st1 tip hover" original-title="ГРАНД ПРИ" d="M248.1,149h16v37h-16V149z"/>
+                                    <path class="st1 tip hover" original-title="FASHION STYLE" d="M231.1,149h16v37h-16V149z"/>
+                                    <path class="st1 tip hover" original-title="МОСКОВСКИЙ ЮВЕЛИРНЫЙ ЗАВОД" d="M209.1,149h21v37h-21V149z"/>
+                                    <path class="st1 tip hover" original-title="ADIDAS" d="M128.1,186h71V69h-71V27l-73,31v49h73V186z"/>
+                                    <path class="st1 tip hover" original-title="RIVE GAUCHE" d="M55.1,120v-12h72v78h-91l-16-43h50v-23H55.1z"/>
+                                    <text transform="matrix(1 0 0 1 86.0555 152.0001)" class="st90 icoMap">1</text>
+                                    <text transform="matrix(1 0 0 1 159.0555 123.0001)" class="st90 icoMap">2</text>
+                                    <text transform="matrix(1 0 0 1 362.0555 104.0001)" class="st90 icoMap">8</text>
+                                    <text transform="matrix(1 0 0 1 217.0555 170.0001)" class="st90 icoMap">3</text>
+                                    <text transform="matrix(1 0 0 1 235.0555 170.0001)" class="st90 icoMap">4</text>
+                                    <text transform="matrix(1 0 0 1 252.0555 170.0001)" class="st90 icoMap">5</text>
+                                    <text transform="matrix(1 0 0 1 293.0554 170.0001)" class="st90 icoMap">6</text>
+                                    <text transform="matrix(1 0 0 1 272.0554 180.0001)" class="st90 icoMap">7</text>
+                                    <text transform="matrix(1 0 0 1 502.5554 173.0001)" class="st90 icoMap">9</text>
+                                    <text transform="matrix(1 0 0 1 562.0554 149)" class="st90 icoMap">10</text>
+                                    <text transform="matrix(1 0 0 1 610.0554 125)" class="st90 icoMap">11</text>
+                                    <text transform="matrix(1 0 0 1 630.0554 140)" class="st90 icoMap">55</text>
+                                    <text transform="matrix(1 0 0 1 610.0554 153)" class="st90 icoMap">56</text>
+                                    <text transform="matrix(1 0 0 1 630.0554 167)" class="st90 icoMap">57</text>
+                                    <text transform="matrix(1 0 0 1 610.0554 182)" class="st90 icoMap">58</text>
+                                    <text transform="matrix(1 0 0 1 630.0554 182)" class="st90 icoMap">59</text>
+                                    <text transform="matrix(1 0 0 1 192.0555 217.5)" class="st90 icoMap">47</text>
+                                    <text transform="matrix(1 0 0 1 303.5554 217.5)" class="st90 icoMap">48</text>
+                                    <text transform="matrix(1 0 0 1 341.0555 216.9999)" class="st90 icoMap">49</text>
+                                    <text transform="matrix(1 0 0 1 533.0554 216.9999)" class="st90 icoMap">50</text>
+                                    <text transform="matrix(1 0 0 1 116.0555 375.9999)" class="st90 icoMap">23</text>
+                                    <text transform="matrix(1 0 0 1 171.0555 262.0001)" class="st90 icoMap">24</text>
+                                    <text transform="matrix(1 0 0 1 195.0555 269.0001)" class="st90 icoMap">25</text>
+                                    <text transform="matrix(1 0 0 1 239.0554 262.0001)" class="st90 icoMap">26</text>
+                                    <text transform="matrix(1 0 0 1 269.0554 262.0001)" class="st90 icoMap">27</text>
+                                    <text transform="matrix(1 0 0 1 290.0554 262.0001)" class="st90 icoMap">28</text>
+                                    <text transform="matrix(1 0 0 1 310.0554 262.0001)" class="st90 icoMap">29</text>
+                                    <text transform="matrix(1 0 0 1 340.0555 262.0001)" class="st90 icoMap">30</text>
+                                    <text transform="matrix(1 0 0 1 423.0555 262.0001)" class="st90 icoMap">31</text>
+                                    <text transform="matrix(1 0 0 1 452.0554 281.0001)" class="st90 icoMap">32</text>
+                                    <text transform="matrix(1 0 0 1 472.5554 281.0001)" class="st90 icoMap">33</text>
+                                    <text transform="matrix(1 0 0 1 506.0553 262)" class="st90 icoMap">34</text>
+                                    <text transform="matrix(1 0 0 1 545.0555 262)" class="st90 icoMap">35</text>
+                                    <text transform="matrix(1 0 0 1 625.5554 262)" class="st90 icoMap">12</text>
+                                    <text transform="matrix(1 0 0 1 209.0554 307)" class="st90 icoMap">46</text>
+                                    <text transform="matrix(1 0 0 1 256.0554 337)" class="st90 icoMap">45</text>
+                                    <text transform="matrix(1 0 0 1 297.5554 300.0001)" class="st90 icoMap">44</text>
+                                    <text transform="matrix(1 0 0 1 340.0555 329.9998)" class="st90 icoMap">43</text>
+                                    <text transform="matrix(1 0 0 1 340.0555 349)" class="st90 icoMap">42</text>
+                                    <text transform="matrix(1 0 0 1 423.0555 300.0001)" class="st90 icoMap">41</text>
+                                    <text transform="matrix(1 0 0 1 423.0555 329.9998)" class="st90 icoMap">40</text>
+                                    <text transform="matrix(1 0 0 1 423.0555 350.5)" class="st90 icoMap">39</text>
+                                    <text transform="matrix(1 0 0 1 462.0554 336)" class="st90 icoMap">38</text>
+                                    <text transform="matrix(1 0 0 1 498.5554 336)" class="st90 icoMap">37</text>
+                                    <text transform="matrix(1 0 0 1 520.0555 299.5)" class="st90 icoMap">36</text>
+                                    <text transform="matrix(1 0 0 1 625.5554 299.9051)" class="st90 icoMap">13</text>
+                                    <text transform="matrix(1 0 0 1 607.0554 345)" class="st90 icoMap">14</text>
+                                    <text transform="matrix(1 0 0 1 573.0555 312.9998)" class="st90 icoMap">51</text>
+                                    <text transform="matrix(1 0 0 1 522.0554 363.9999)" class="st90 icoMap">52</text>
+                                    <text transform="matrix(1 0 0 1 422.0555 377.9999)" class="st90 icoMap">53</text>
+                                    <text transform="matrix(1 0 0 1 298.5554 377.9999)" class="st90 icoMap">54</text>
+                                    <text transform="matrix(1 0 0 1 260.0554 432)" class="st90 icoMap">22</text>
+                                    <text transform="matrix(1 0 0 1 301.5554 432)" class="st90 icoMap">21</text>
+                                    <text transform="matrix(1 0 0 1 341.0555 415.0001)" class="st90 icoMap">20</text>
+                                    <text transform="matrix(1 0 0 1 340.0555 456)" class="st90 icoMap">19</text>
+                                    <text transform="matrix(1 0 0 1 422.0555 455)" class="st90 icoMap">18</text>
+                                    <text transform="matrix(1 0 0 1 433.0555 420.9999)" class="st90 icoMap">17</text>
+                                    <text transform="matrix(1 0 0 1 462.0554 433.5)" class="st90 icoMap">16</text>
+                                    <text transform="matrix(1 0 0 1 554.0554 395.9999)" class="st90 icoMap">15</text>
+
+                                <filter id="drop-shadow">
+                                  <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
+                                  <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
+                                  <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
+                                  <feComposite in2="offsetblur" operator="in"></feComposite>
+                                  <feMerge>
+                                    <feMergeNode></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                  </feMerge>
+                                </filter>
+                            </svg>
+
+                            </div>
 
                         </div>
+
+                        <div class="n-plan__values">
+
+                            <div class="n-plan__values__container">
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color1" >
+                                        <span>Спортивные товары</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t1"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>SPAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t2"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>ILE DE BEAUTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t3"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>22</p><span>MASCOTTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color2">
+                                        <span>Сувениры, подарки, часы</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t1"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>SPAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t2"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>ILE DE BEAUTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t3"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>22</p><span>MASCOTTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color3">
+                                        <span>рестораны и кафе</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t1"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>SPAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t2"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>ILE DE BEAUTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t3"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>22</p><span>MASCOTTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color4">
+                                        <span>Обувь</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t1"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>SPAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t2"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>ILE DE BEAUTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t3"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>22</p><span>MASCOTTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color5">
+                                        <span>товары для дома</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t1"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>SPAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t2"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>ILE DE BEAUTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t3"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>22</p><span>MASCOTTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                            </div>
+                            <!-- /.n-plan__values__container -->
+
+                        </div>
+                        <!-- /.n-plan__values -->
 
                     </div>
                     <!-- /.n-plan__plan -->
 
                     <div class="n-plan__plan tabs-pane" id="tab2">
 
-                        <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
-                        <div class="n-plan__plan__elevator icoMap"></div>
+                        <div class="n-plan__inside">
 
-                        <div class="n-plan__plan__svg">
-                             <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
-                             <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
+                            <div class="n-plan__plan__elevator icoMap"></div>
 
-                        <svg width="650px" height="490px" viewBox="0 0 650 490" class="pos">
-                            <style type="text/css">
+                            <div class="n-plan__plan__svg">
+                                 <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
+                                 <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
 
-                            </style>
-                            <g class="n-plan__plan__svg">
-                                <path class="st2 hover" original-title="СЕРЕБРЯНЫЙ СЛОН" d="M293.1,366h30v15h-30V366z"/>
-                                <path class="st2 hover" original-title="-" d="M461.1,366h30v15h-30V366z"/>
-                                <path class="st2 hover" original-title="ARTNAIL" d="M585.1,244h17v23h-17V244z"/>
-                                <path class="st2 hover" original-title="-" d="M191.5,311c-8.2-7.9-15.5-15-19.4-19c-3.6-3.7-4-7-4-7v-11h38v37H191.5z M244.1,354c0,0-0.7,0.2-2,0H244.1z"/>
-                                <path class="st2 hover" original-title="ОТДЕЛКА" d="M244.1,354c0,0-7.6,0.5-17-9c-9-9.1-22.8-21.7-34.5-33h55.5v42H244.1z"/>
-                                <path class="st2 hover" original-title="LTB" d="M249.1,284h39v70h-39V284z"/>
-                                <path class="st2 hover" original-title="MAVI" d="M289.1,284h39v70h-39V284z"/>
-                                <path class="st2 hover" original-title="КОФЕЙНЯ IRIS" d="M329.1,274h27v80h-27V274z"/>
-                                <path class="st2 hover" original-title="GUESS" d="M423.1,312h36v42h-36V312z"/>
-                                <path class="st2 hover" original-title="VERA IRISOVA" d="M423.1,285h36v26h-36V285z"/>
-                                <path class="st2 hover" original-title="GUESS" d="M460.1,285h31v69h-31V285z"/>
-                                <path class="st2 hover" original-title="-" d="M532.1,285v44l-26,25h-14v-69H532.1z"/>
-                                <path class="st2 hover" original-title="-" d="M533.1,285h40v4l-40,39V285z"/>
-                                <path class="st2 hover" original-title="-" d="M533.1,235h40v49h-40V235z"/>
-                                <path class="st2 hover" original-title="STEILMANN" d="M492.1,239h5l4-4h31v49h-40V239z"/>
-                                <path class="st2 hover" original-title="МИР ЗАКОЛОК" d="M468.1,239h23v45h-23V239z"/>
-                                <path class="st2 hover" original-title="LE GRAN" d="M423.1,239h44v45h-44V239z"/>
-                                <path class="st2 hover" original-title="ДРУГИЕ ПОДАРКИ" d="M329.1,239h27v34h-27V239z"/>
-                                <path class="st2 hover" original-title="KIRA PLASTININA" d="M289.1,239h39v44h-39V239z"/>
-                                <path class="st2 hover" original-title="GLANCE" d="M249.1,239h39v44h-39V239z"/>
-                                <path class="st2 hover" original-title="-" d="M207.1,235v76h41v-72h-5l-3-4H207.1z"/>
-                                <path class="st2 hover" original-title="DONATTO" d="M168.1,235h38v38h-38V235z"/>
-                                <path class="st2 hover" original-title="H & M" d="M208.1,424v47h-59c-35.3,0-64-28.7-64-64V234h42v61c0,0-1.9,12.1,6,20c17.5,17.6,53.4,51,70,67
-                                    c11.4,11,18,14,18,14h18v28H208.1z"/>
-                                <path class="st2 hover" original-title="WESTLAND" d="M247.1,396h40v38h-40V396z"/>
-                                <path class="st2 hover" original-title="БАТТЕРФЛЯЙ" d="M288.1,396h20v38h-20V396z"/>
-                                <path class="st2 hover" original-title="ТРИУМФ" d="M309.1,396h20v38h-20V396z"/>
-                                <path class="st2 hover" original-title="-" d="M275.1,471v-16h13v-20h42v-39h38v75H275.1z"/>
-                                <path class="st2 hover" original-title="KANZLER" d="M369.1,396h40v75h-40V396z"/>
-                                <path class="st2 hover" original-title="MEXX" d="M410.1,396h39v75h-39V396z"/>
-                                <path class="st2 hover" original-title="ARTNAIL" d="M491.1,455v-59h-41v75h54v-16H491.1z"/>
-                                <path class="st2 hover" original-title="-" d="M571.1,435h-39v-22h-28v-17h16c0,0,3.1,0.5,6-2c10.2-8.9,45-45,45-45V435z"/>
-                                <path class="st2 hover" original-title="COLIN'S" d="M645.1,316h-40l-33,32v87h44v-22h24v22h5V316z"/>
-                                <path class="st2 hover" original-title="POMPA" d="M645.1,276h-29v10c0,0-1.9,13.6-3,18c-2,8-7,11-7,11h39V276z"/>
-                                <path class="st2 hover" original-title="VAN CLIFF" d="M616.1,235h29v40h-29V235z"/>
-                                <path class="st2 hover" original-title="NAPAPIJRI" d="M616.1,190h29v44h-29V190z"/>
-                                <path class="st2 hover" original-title="OSTIN" d="M606.1,190v-12h39v-52h-7v-19h-32V89h-33V76h-31V60h-9v130H606.1z"/>
-                                <path class="st2 hover" original-title="BAON" d="M492.1,114v72h6l4,4h30v-76H492.1z"/>
-                                <path class="st2 hover" original-title="LOVE REPUBLIC" d="M451.1,114h40v72h-40V114z"/>
-                                <path class="st2 hover" original-title="PULL & BEAR" d="M418.1,190l4-4h28v-73h82V60h-179v130H418.1z"/>
-                                <path class="st2 hover" original-title="-" d="M288.1,186h29l3,4h32V60l-105,0v16v0v9h41V186z"/>
-                                <path class="st2 hover" original-title="ZARINA" d="M254.1,86h33v100h-33V86z"/>
-                                <path class="st2 hover" original-title="BE FREE" d="M245.1,190l4-4h4V86h-33v104H245.1z"/>
-                                <path class="st2 hover" original-title="BERSHKA" d="M209.1,49h-29v27h30v114h-83v38h-51v-52h-44l-16-43h54v-13h-15V69l136-58L209.1,49z"/>
+                            <svg width="650px" height="490px" viewBox="0 0 650 490" class="pos">
+                                <style type="text/css">
+
+                                </style>
+                                <g class="n-plan__plan__svg">
+                                    <path class="st2 tip hover" original-title="СЕРЕБРЯНЫЙ СЛОН" d="M293.1,366h30v15h-30V366z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M461.1,366h30v15h-30V366z"/>
+                                    <path class="st2 tip hover" original-title="ARTNAIL" d="M585.1,244h17v23h-17V244z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M191.5,311c-8.2-7.9-15.5-15-19.4-19c-3.6-3.7-4-7-4-7v-11h38v37H191.5z M244.1,354c0,0-0.7,0.2-2,0H244.1z"/>
+                                    <path class="st2 tip hover" original-title="ОТДЕЛКА" d="M244.1,354c0,0-7.6,0.5-17-9c-9-9.1-22.8-21.7-34.5-33h55.5v42H244.1z"/>
+                                    <path class="st2 tip hover" original-title="LTB" d="M249.1,284h39v70h-39V284z"/>
+                                    <path class="st2 tip hover t4" original-title="MAVI" d="M289.1,284h39v70h-39V284z"/>
+                                    <path class="st2 tip hover" original-title="КОФЕЙНЯ IRIS" d="M329.1,274h27v80h-27V274z"/>
+                                    <path class="st2 tip hover" original-title="GUESS" d="M423.1,312h36v42h-36V312z"/>
+                                    <path class="st2 tip hover" original-title="VERA IRISOVA" d="M423.1,285h36v26h-36V285z"/>
+                                    <path class="st2 tip hover" original-title="GUESS" d="M460.1,285h31v69h-31V285z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M532.1,285v44l-26,25h-14v-69H532.1z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M533.1,285h40v4l-40,39V285z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M533.1,235h40v49h-40V235z"/>
+                                    <path class="st2 tip hover" original-title="STEILMANN" d="M492.1,239h5l4-4h31v49h-40V239z"/>
+                                    <path class="st2 tip hover" original-title="МИР ЗАКОЛОК" d="M468.1,239h23v45h-23V239z"/>
+                                    <path class="st2 tip hover" original-title="LE GRAN" d="M423.1,239h44v45h-44V239z"/>
+                                    <path class="st2 tip hover" original-title="ДРУГИЕ ПОДАРКИ" d="M329.1,239h27v34h-27V239z"/>
+                                    <path class="st2 tip hover" original-title="KIRA PLASTININA" d="M289.1,239h39v44h-39V239z"/>
+                                    <path class="st2 tip hover" original-title="GLANCE" d="M249.1,239h39v44h-39V239z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M207.1,235v76h41v-72h-5l-3-4H207.1z"/>
+                                    <path class="st2 tip hover" original-title="DONATTO" d="M168.1,235h38v38h-38V235z"/>
+                                    <path class="st2 tip hover" original-title="H & M" d="M208.1,424v47h-59c-35.3,0-64-28.7-64-64V234h42v61c0,0-1.9,12.1,6,20c17.5,17.6,53.4,51,70,67
+                                        c11.4,11,18,14,18,14h18v28H208.1z"/>
+                                    <path class="st2 tip hover" original-title="WESTLAND" d="M247.1,396h40v38h-40V396z"/>
+                                    <path class="st2 tip hover" original-title="БАТТЕРФЛЯЙ" d="M288.1,396h20v38h-20V396z"/>
+                                    <path class="st2 tip hover" original-title="ТРИУМФ" d="M309.1,396h20v38h-20V396z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M275.1,471v-16h13v-20h42v-39h38v75H275.1z"/>
+                                    <path class="st2 tip hover" original-title="KANZLER" d="M369.1,396h40v75h-40V396z"/>
+                                    <path class="st2 tip hover" original-title="MEXX" d="M410.1,396h39v75h-39V396z"/>
+                                    <path class="st2 tip hover" original-title="ARTNAIL" d="M491.1,455v-59h-41v75h54v-16H491.1z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M571.1,435h-39v-22h-28v-17h16c0,0,3.1,0.5,6-2c10.2-8.9,45-45,45-45V435z"/>
+                                    <path class="st2 tip hover" original-title="COLIN'S" d="M645.1,316h-40l-33,32v87h44v-22h24v22h5V316z"/>
+                                    <path class="st2 tip hover" original-title="POMPA" d="M645.1,276h-29v10c0,0-1.9,13.6-3,18c-2,8-7,11-7,11h39V276z"/>
+                                    <path class="st2 tip hover" original-title="VAN CLIFF" d="M616.1,235h29v40h-29V235z"/>
+                                    <path class="st2 tip hover" original-title="NAPAPIJRI" d="M616.1,190h29v44h-29V190z"/>
+                                    <path class="st2 tip hover t6" original-title="OSTIN" d="M606.1,190v-12h39v-52h-7v-19h-32V89h-33V76h-31V60h-9v130H606.1z"/>
+                                    <path class="st2 tip hover" original-title="BAON" d="M492.1,114v72h6l4,4h30v-76H492.1z"/>
+                                    <path class="st2 tip hover" original-title="LOVE REPUBLIC" d="M451.1,114h40v72h-40V114z"/>
+                                    <path class="st2 tip hover t5" original-title="PULL & BEAR" d="M418.1,190l4-4h28v-73h82V60h-179v130H418.1z"/>
+                                    <path class="st2 tip hover" original-title="-" d="M288.1,186h29l3,4h32V60l-105,0v16v0v9h41V186z"/>
+                                    <path class="st2 tip hover" original-title="ZARINA" d="M254.1,86h33v100h-33V86z"/>
+                                    <path class="st2 tip hover" original-title="BE FREE" d="M245.1,190l4-4h4V86h-33v104H245.1z"/>
+                                    <path class="st2 tip hover" original-title="BERSHKA" d="M209.1,49h-29v27h30v114h-83v38h-51v-52h-44l-16-43h54v-13h-15V69l136-58L209.1,49z"/>
 
 
-                                <text x="468" y="379"class="st2 st3 st90 icoMap">42</text>
-                                <text x="300" y="379"class="st2 st3 st90 icoMap">43</text>
-                                <text x="462" y="434"class="st2 st3 st90 icoMap">41</text>
-                                <text transform="matrix(1 0 0 1 130.0555 125)" class="st3 st4 st90 icoMap">1</text>
-                                <text transform="matrix(1 0 0 1 234.5555 142.8103)" class="st3 st4 st90 icoMap">2</text>
-                                <text transform="matrix(1 0 0 1 267.0554 143)" class="st3 st4 st90 icoMap">3</text>
-                                <text transform="matrix(1 0 0 1 313.0555 142.9999)" class="st3 st4 st90 icoMap">4</text>
-                                <text transform="matrix(1 0 0 1 399.0555 142.8102)" class="st3 st4 st90 icoMap">5</text>
-                                <text transform="matrix(1 0 0 1 468.0555 153.9999)" class="st3 st4 st90 icoMap">6</text>
-                                <text transform="matrix(1 0 0 1 512.0553 153.9998)" class="st3 st4 st90 icoMap">7</text>
-                                <text transform="matrix(1 0 0 1 585.0553 153.9998)" class="st3 st4 st90 icoMap">8</text>
-                                <text transform="matrix(1 0 0 1 138.0555 395.9999)" class="st3 st4 st90 icoMap">21</text>
-                                <text transform="matrix(1 0 0 1 177.994 260.9998)" class="st3 st4 st90 icoMap">22</text>
-                                <text transform="matrix(1 0 0 1 182.0554 294.4998)" class="st3 st4 st90 icoMap">40</text>
-                                <text transform="matrix(1 0 0 1 220.0555 275.9998)" class="st3 st4 st90 icoMap">23</text>
-                                <text transform="matrix(1 0 0 1 220.0554 333.0026)" class="st3 st4 st90 icoMap">39</text>
-                                <text transform="matrix(1 0 0 1 260.0555 266.9997)" class="st3 st4 st90 icoMap">24</text>
-                                <text transform="matrix(1 0 0 1 260.0555 328.0002)" class="st3 st4 st90 icoMap">38</text>
-                                <text transform="matrix(1 0 0 1 299.0554 266.9999)" class="st3 st4 st90 icoMap">25</text>
-                                <text transform="matrix(1 0 0 1 299.5554 328)" class="st3 st4 st90 icoMap">37</text>
-                                <text transform="matrix(1 0 0 1 334.0555 261.5)" class="st3 st4 st90 icoMap">26</text>
-                                <text transform="matrix(1 0 0 1 334.0553 311.9998)" class="st3 st4 st90 icoMap">36</text>
-                                <text transform="matrix(1 0 0 1 437.0553 267.0001)" class="st3 st4 st90 icoMap">27</text>
-                                <text transform="matrix(1 0 0 1 472.0552 267)" class="st3 st4 st90 icoMap">28</text>
-                                <text transform="matrix(1 0 0 1 505.0554 267)" class="st3 st4 st90 icoMap">29</text>
-                                <text transform="matrix(1 0 0 1 544.0555 267)" class="st3 st4 st90 icoMap">30</text>
-                                <text transform="matrix(1 0 0 1 437.0552 305.0005)" class="st3 st4 st90 icoMap">34</text>
-                                <text transform="matrix(1 0 0 1 437.055 339.8103)" class="st3 st4 st90 icoMap">35</text>
-                                <text transform="matrix(1 0 0 1 468.0556 328.0001)" class="st3 st4 st90 icoMap">33</text>
-                                <text transform="matrix(1 0 0 1 504.0552 319)" class="st3 st4 st90 icoMap">32</text>
-                                <text transform="matrix(1 0 0 1 540.5554 300.9997)" class="st3 st4 st90 icoMap">31</text>
-                                <text transform="matrix(1 0 0 1 586.0552 261.4998)" class="st3 st4 st90 icoMap">41</text>
-                                <text transform="matrix(1 0 0 1 624.5553 217.8102)" class="st3 st4 st90 icoMap">9</text>
-                                <text transform="matrix(1 0 0 1 624.5552 259.4998)" class="st3 st4 st90 icoMap">10</text>
-                                <text transform="matrix(1 0 0 1 624.5551 300.9997)" class="st3 st4 st90 icoMap">11</text>
-                                <text transform="matrix(1 0 0 1 606.0554 381.0001)" class="st3 st4 st90 icoMap">12</text>
-                                <text transform="matrix(1 0 0 1 544.0555 409.8102)" class="st3 st4 st90 icoMap">13</text>
-                                <text transform="matrix(1 0 0 1 260.0555 419.8103)" class="st3 st4 st90 icoMap">20</text>
-                                <text transform="matrix(1 0 0 1 290.0555 419.8105)" class="st3 st4 st90 icoMap">19</text>
-                                <text transform="matrix(1 0 0 1 311.0554 419.8103)" class="st3 st4 st90 icoMap">18</text>
-                                <text transform="matrix(1 0 0 1 334.0554 443.8102)" class="st3 st4 st90 icoMap">17</text>
-                                <text transform="matrix(1 0 0 1 380.5554 434.9996)" class="st3 st4 st90 icoMap">16</text>
-                                <text transform="matrix(1 0 0 1 421.0555 433.9998)" class="st3 st4 st90 icoMap">15</text>
-                            </g>
+                                    <text x="468" y="379"class="st90 icoMap">42</text>
+                                    <text x="300" y="379"class="st90 icoMap">43</text>
+                                    <text x="462" y="434"class="st90 icoMap">41</text>
+                                    <text transform="matrix(1 0 0 1 130.0555 125)" class="st90 icoMap">1</text>
+                                    <text transform="matrix(1 0 0 1 234.5555 142.8103)" class="st90 icoMap">2</text>
+                                    <text transform="matrix(1 0 0 1 267.0554 143)" class="st90 icoMap">3</text>
+                                    <text transform="matrix(1 0 0 1 313.0555 142.9999)" class="st90 icoMap">4</text>
+                                    <text transform="matrix(1 0 0 1 399.0555 142.8102)" class="st90 icoMap">5</text>
+                                    <text transform="matrix(1 0 0 1 468.0555 153.9999)" class="st90 icoMap">6</text>
+                                    <text transform="matrix(1 0 0 1 512.0553 153.9998)" class="st90 icoMap">7</text>
+                                    <text transform="matrix(1 0 0 1 585.0553 153.9998)" class="st90 icoMap">8</text>
+                                    <text transform="matrix(1 0 0 1 138.0555 395.9999)" class="st90 icoMap">21</text>
+                                    <text transform="matrix(1 0 0 1 177.994 260.9998)" class="st90 icoMap">22</text>
+                                    <text transform="matrix(1 0 0 1 182.0554 294.4998)" class="st90 icoMap">40</text>
+                                    <text transform="matrix(1 0 0 1 220.0555 275.9998)" class="st90 icoMap">23</text>
+                                    <text transform="matrix(1 0 0 1 220.0554 333.0026)" class="st90 icoMap">39</text>
+                                    <text transform="matrix(1 0 0 1 260.0555 266.9997)" class="st90 icoMap">24</text>
+                                    <text transform="matrix(1 0 0 1 260.0555 328.0002)" class="st90 icoMap">38</text>
+                                    <text transform="matrix(1 0 0 1 299.0554 266.9999)" class="st90 icoMap">25</text>
+                                    <text transform="matrix(1 0 0 1 299.5554 328)" class="st90 icoMap">37</text>
+                                    <text transform="matrix(1 0 0 1 334.0555 261.5)" class="st90 icoMap">26</text>
+                                    <text transform="matrix(1 0 0 1 334.0553 311.9998)" class="st90 icoMap">36</text>
+                                    <text transform="matrix(1 0 0 1 437.0553 267.0001)" class="st90 icoMap">27</text>
+                                    <text transform="matrix(1 0 0 1 472.0552 267)" class="st90 icoMap">28</text>
+                                    <text transform="matrix(1 0 0 1 505.0554 267)" class="st90 icoMap">29</text>
+                                    <text transform="matrix(1 0 0 1 544.0555 267)" class="st90 icoMap">30</text>
+                                    <text transform="matrix(1 0 0 1 437.0552 305.0005)" class="st90 icoMap">34</text>
+                                    <text transform="matrix(1 0 0 1 437.055 339.8103)" class="st90 icoMap">35</text>
+                                    <text transform="matrix(1 0 0 1 468.0556 328.0001)" class="st90 icoMap">33</text>
+                                    <text transform="matrix(1 0 0 1 504.0552 319)" class="st90 icoMap">32</text>
+                                    <text transform="matrix(1 0 0 1 540.5554 300.9997)" class="st90 icoMap">31</text>
+                                    <text transform="matrix(1 0 0 1 586.0552 261.4998)" class="st90 icoMap">41</text>
+                                    <text transform="matrix(1 0 0 1 624.5553 217.8102)" class="st90 icoMap">9</text>
+                                    <text transform="matrix(1 0 0 1 624.5552 259.4998)" class="st90 icoMap">10</text>
+                                    <text transform="matrix(1 0 0 1 624.5551 300.9997)" class="st90 icoMap">11</text>
+                                    <text transform="matrix(1 0 0 1 606.0554 381.0001)" class="st90 icoMap">12</text>
+                                    <text transform="matrix(1 0 0 1 544.0555 409.8102)" class="st90 icoMap">13</text>
+                                    <text transform="matrix(1 0 0 1 260.0555 419.8103)" class="st90 icoMap">20</text>
+                                    <text transform="matrix(1 0 0 1 290.0555 419.8105)" class="st90 icoMap">19</text>
+                                    <text transform="matrix(1 0 0 1 311.0554 419.8103)" class="st90 icoMap">18</text>
+                                    <text transform="matrix(1 0 0 1 334.0554 443.8102)" class="st90 icoMap">17</text>
+                                    <text transform="matrix(1 0 0 1 380.5554 434.9996)" class="st90 icoMap">16</text>
+                                    <text transform="matrix(1 0 0 1 421.0555 433.9998)" class="st90 icoMap">15</text>
+                                </g>
 
-                            <filter id="drop-shadow">
-                              <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
-                              <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
-                              <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
-                              <feComposite in2="offsetblur" operator="in"></feComposite>
-                              <feMerge>
-                                <feMergeNode></feMergeNode>
-                                <feMergeNode in="SourceGraphic"></feMergeNode>
-                              </feMerge>
-                            </filter>
-                        </svg>
+                                <filter id="drop-shadow">
+                                  <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
+                                  <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
+                                  <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
+                                  <feComposite in2="offsetblur" operator="in"></feComposite>
+                                  <feMerge>
+                                    <feMergeNode></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                  </feMerge>
+                                </filter>
+                            </svg>
+
+                            </div>
 
                         </div>
+
+                        <div class="n-plan__values">
+
+                            <div class="n-plan__values__container">
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color1" >
+                                        <span>Спортивные товары</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t4"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>37</p><span>MAVI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t5"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>5</p><span>PULL & BEAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t6"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>OSTIN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color2">
+                                        <span>Сувениры, подарки, часы</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t4"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>37</p><span>MAVI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t5"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>5</p><span>PULL & BEAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t6"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>OSTIN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color3">
+                                        <span>рестораны и кафе</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t4"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>37</p><span>MAVI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t5"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>5</p><span>PULL & BEAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t6"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>OSTIN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color4">
+                                        <span>Обувь</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t4"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>37</p><span>MAVI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t5"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>5</p><span>PULL & BEAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t6"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>OSTIN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color5">
+                                        <span>товары для дома</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t4"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>37</p><span>MAVI</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t5"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>5</p><span>PULL & BEAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t6"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>OSTIN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                            </div>
+                            <!-- /.n-plan__values__container -->
+
+                        </div>
+                        <!-- /.n-plan__values -->
 
                     </div>
                     <!-- /.n-plan__plan -->
 
                     <div class="n-plan__plan tabs-pane" id="tab3">
 
-                        <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
-                        <div class="n-plan__plan__elevator icoMap"></div>
+                        <div class="n-plan__inside">
 
-                        <div class="n-plan__plan__svg n-plan__plan__svg--mod">
-                             <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
-                             <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
+                            <div class="n-plan__plan__elevator icoMap"></div>
 
-                        <svg width="650px" height="510px" viewBox="0 0 650 510" class="pos">
-                            <style type="text/css">
+                            <div class="n-plan__plan__svg n-plan__plan__svg--mod">
+                                 <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
+                                 <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
 
-                            </style>
-                            <g class="n-plan__plan__svg">
-                                <path class="st3 hover" original-title="-" d="M200.1,359l19,18l10-11l-18-17L200.1,359z"/>
-                                <path class="st3 hover" original-title="-" d="M293.1,366h30v15h-30V366z"/>
-                                <path class="st3 hover" original-title="-" d="M461.1,366h30v15h-30V366z"/>
-                                <path class="st3 hover" original-title="-" d="M585.1,244h17v23h-17V244z"/>
-                                <path class="st3 hover" original-title="-" d="M140.1,244h17v23h-17V244z"/>
-                                <path class="st3 hover" original-title="-" d="M168.1,274h38v37h-14.6c-8.2-7.9-15.5-15-19.4-19c-3.6-3.7-4-7-4-7V274z"/>
-                                <path class="st3 hover" original-title="VITAWIN" d="M243,354l-1-0.1c-2.8-0.4-8.5-2.1-15-8.9c-8.8-9.2-22.8-21.7-34.5-33h55.5v42C248.1,354,241.9,353.9,243,354z"
-                                    />
-                                <path class="st3 hover" original-title="SKECHERS" d="M249.1,284h39v70h-39V284z"/>
-                                <path class="st3 hover" original-title="-" d="M289.1,284h39v70h-39V284z"/>
-                                <path class="st3 hover" original-title="-" d="M329.1,274h27v80h-27V274z"/>
-                                <path class="st3 hover" original-title="-" d="M423.1,312h45v42h-45V312z"/>
-                                <path class="st3 hover" original-title="МЕДВЕЖОНОК" d="M423.1,283h45v28h-45V283z"/>
-                                <path class="st3 hover" original-title="-" d="M469.1,283h30v71h-30V283z"/>
-                                <path class="st3 hover" original-title="-" d="M532.1,328.8v0.2l-26,25h-6v-69v-2h40v38L532.1,328.8z"/>
-                                <path class="st3 hover" original-title="-" d="M541.1,283h32l0,6l-32,31.2V283z"/>
-                                <path class="st3 hover" original-title="-" d="M541.1,235h32v47h-32V235z"/>
-                                <path class="st3 hover" original-title="-" d="M500.1,235h40v47h-40V235z"/>
-                                <path class="st3 hover" original-title="ШЛЯПО" d="M499.1,237l-2,2h-21v43h23V237z"/>
-                                <path class="st3 hover" original-title="ФИШКА" d="M458.1,239h17v43h-17V239z"/>
-                                <path class="st3 hover" original-title="МЕДВЕЖОНОК" d="M423.1,239h34v43h-34V239z"/>
-                                <path class="st3 hover" original-title="CROCKID" d="M329.1,239h27v34h-27V239z"/>
-                                <path class="st3 hover" original-title="МАРУСЯ" d="M289.1,239h39v44h-39V239z"/>
-                                <path class="st3 hover" original-title="БУДУ МАМОЙ" d="M249.1,239h39v44h-39V239z"/>
-                                <path class="st3 hover" original-title="ACOOLA" d="M207.1,235v76h41v-72h-5l-3-4H207.1z"/>
-                                <path class="st3 hover" original-title="KINDER" d="M168.1,235h38v38h-38V235z"/>
-                                <path class="st3 hover" original-title="САБОТАЖ" d="M85.1,234h42v27h-42V234z"/>
-                                <path class="st3 hover" original-title="СПОРТМАСТЕР" d="M208.1,424v47h-59c-35.3,0-64-28.7-64-64V262h42v33c0,0-1.9,12.1,6,20c17.5,17.6,53.4,51,70,67
-                                    c1.8,1.7,3.5,3.2,5,4.6L208.1,424L208.1,424z"/>
-                                <path class="st3 hover" original-title="АКВАФОР" d="M209.1,424v-36.5c7.7,6.6,12,8.5,12,8.5h18v28H209.1z"/>
-                                <path class="st3 hover" original-title="-" d="M247.1,396h40v39h-40V396z"/>
-                                <path class="st3 hover" original-title="ANTA" d="M288.1,396h41v74h-41V396z"/>
-                                <path class="st3 hover" original-title="-" d="M330.1,471v-75h38v107.3c-29.7-1.7-53.4-6.7-63.6-12.3h-28.4v-20H330.1z"/>
-                                <path class="st3 hover" original-title="-" d="M409.1,503.6c-5.8,0.3-11.8,0.4-18,0.4c-7.6,0-15-0.2-22-0.6V396h40V503.6z"/>
-                                <path class="st3 hover" original-title="QUIKSILVER" d="M449.1,499.5c-11.2,1.9-24.5,3.4-39,4.1V396h39V499.5z"/>
-                                <path class="st3 hover" original-title="-" d="M491.1,471h13v20h-25.5c-5.7,3.1-15.7,6-28.5,8.3V396h41V471z"/>
-                                <path class="st3 hover" original-title="-" d="M571.1,435h-39v-22h-28v-17h16c0,0,3.1,0.5,6-2c10.2-8.9,45-45,45-45V435z"/>
-                                <path class="st3 hover" original-title="-" d="M616.1,413h21v9h8V316h-40l-33,32v87h44V413z"/>
-                                <path class="st3 hover" original-title="-" d="M645.1,276h-29v10c0,0-1.9,13.6-3,18c-2,8-7,11-7,11h39V276z"/>
-                                <path class="st3 hover" original-title="-" d="M616.1,235h29v40h-29V235z"/>
-                                <path class="st3 hover" original-title="КОТОФЕЙ" d="M616.1,190h29v44h-29V190z"/>
-                                <path class="st3 hover" original-title="CLEANELLY" d="M583.1,141h25v38h-25V141z"/>
-                                <path class="st3 hover" original-title="VASILISACRAFTS" d="M563.1,141h19v38h-19V141z"/>
-                                <path class="st3 hover" original-title="KAPIKA" d="M458.1,141h41v34h-41V141z"/>
-                                <path class="st3 hover" original-title="ВЕЩИ И СНЫ" d="M417.1,141v38h9l4-4h27v-34H417.1z"/>
-                                <path class="st3 hover" original-title="NIKA SHOP" d="M396.1,141h20v38h-20V141z"/>
-                                <path class="st3 hover" original-title="DIM" d="M375.1,141h20v38h-20V141z"/>
-                                <path class="st3 hover" original-title="ШАЛУНЫ" d="M333.1,141h41v38h-41V141z"/>
-                                <path class="st3 hover" original-title="GULLIVER" d="M289.1,141v34h36l3,4h4v-38H289.1z"/>
-                                <path class="st3 hover" original-title="М.ВИДЕО" d="M289.1,49v91h211v35h5l4,4h53v-39h47v39h5v-12h31V96h-31V78h-33V65h-31V38h-166v11H289.1z"/>
-                                <path class="st3 hover" original-title="REEBOK" d="M253.1,179l3-4h32V49h-29v25h-31v105H253.1z"/>
-                                <path class="st3 hover" original-title="7D AVATAR" d="M187.1,141h23v38h-23V141z"/>
-                                <path class="st3 hover" original-title="ДЕТСКИЙ МИР" d="M186.1,140v39h-59v48l0,0l0,0h-76l0,0v0L0.4,91.4c-0.5-2.3-1.8-8,7.4-12.1L180.1,5l0,0l0,0l0,0l0,0v55h29v1h1
-                                    v79H186.1z"/>
-                                <text x="468" y="379"class="st2 st3 st90 icoMap">51</text>
-                                <text transform="matrix(1 0 0 1 112.111 124.0949)" class="st2 st3 st90 icoMap">1</text>
-                                <text transform="matrix(1 0 0 1 253.0555 124.0948)" class="st2 st3 st90 icoMap">3</text>
-                                <text transform="matrix(1 0 0 1 429.5556 99.0949)" class="st2 st3 st90 icoMap">4</text>
-                                <text transform="matrix(1 0 0 1 195.5552 163.0001)" class="st2 st3 st90 icoMap">2</text>
-                                <text transform="matrix(1 0 0 1 307.0552 162.0001)" class="st2 st3 st90 icoMap">5</text>
-                                <text transform="matrix(1 0 0 1 349.1109 162.0001)" class="st2 st3 st90 icoMap">6</text>
-                                <text transform="matrix(1 0 0 1 381.1108 163.0001)" class="st2 st3 st90 icoMap">7</text>
-                                <text transform="matrix(1 0 0 1 401.1108 163.0001)" class="st2 st3 st90 icoMap">8</text>
-                                <text transform="matrix(1 0 0 1 429.5554 162.9999)" class="st2 st3 st90 icoMap">9</text>
-                                <text transform="matrix(1 0 0 1 470.0553 163.0004)" class="st2 st3 st90 icoMap">10</text>
-                                <text transform="matrix(1 0 0 1 565.0555 163.0001)" class="st2 st3 st90 icoMap">11</text>
-                                <text transform="matrix(1 0 0 1 585.0553 163.0001)" class="st2 st3 st90 icoMap">12</text>
-                                <text transform="matrix(1 0 0 1 96.1109 254)" class="st2 st3 st90 icoMap">26</text>
-                                <text transform="matrix(1 0 0 1 121.1109 405.7289)" class="st2 st3 st90 icoMap">25</text>
-                                <text transform="matrix(1 0 0 1 140.0553 262)" class="st2 st3 st90 icoMap">47</text>
-                                <text transform="matrix(1 0 0 1 178.4732 259.4997)" class="st2 st3 st90 icoMap">27</text>
-                                <text transform="matrix(1 0 0 1 182.6109 295.4999)" class="st2 st3 st90 icoMap">46</text>
-                                <text transform="matrix(1 0 0 1 206.0553 367.9999)" class="st2 st3 st90 icoMap">51</text>
-                                <text transform="matrix(1 0 0 1 213.0556 414.5001)" class="st2 st3 st90 icoMap">24</text>
-                                <text transform="matrix(1 0 0 1 219.2982 279.9998)" class="st2 st3 st90 icoMap">28</text>
-                                <text transform="matrix(1 0 0 1 221.2982 331.9999)" class="st2 st3 st90 icoMap">45</text>
-                                <text transform="matrix(1 0 0 1 260.0556 266.9998)" class="st2 st3 st90 icoMap">29</text>
-                                <text transform="matrix(1 0 0 1 260.0554 320.1999)" class="st2 st3 st90 icoMap">44</text>
-                                <text transform="matrix(1 0 0 1 258.0555 415.4997)" class="st2 st3 st90 icoMap">23</text>
-                                <text transform="matrix(1 0 0 1 299.1105 267.0001)" class="st2 st3 st90 icoMap">30</text>
-                                <text transform="matrix(1 0 0 1 299.1104 320.2)" class="st2 st3 st90 icoMap">43</text>
-                                <text transform="matrix(1 0 0 1 300.1105 378.9999)" class="st2 st3 st90 icoMap">50</text>
-                                <text transform="matrix(1 0 0 1 300.1107 434.9999)" class="st2 st3 st90 icoMap">22</text>
-                                <text transform="matrix(1 0 0 1 333.0555 263.0003)" class="st2 st3 st90 icoMap">31</text>
-                                <text transform="matrix(1 0 0 1 333.0556 319.0001)" class="st2 st3 st90 icoMap">42</text>
-                                <text transform="matrix(1 0 0 1 338.0556 435.0002)" class="st2 st3 st90 icoMap">21</text>
-                                <text transform="matrix(1 0 0 1 381.1107 435)" class="st2 st3 st4 st90 icoMap">20</text>
-                                <text transform="matrix(1 0 0 1 423.0557 434.9999)" class="st2 st3 st90 icoMap">19</text>
-                                <text transform="matrix(1 0 0 1 462.0553 435.0002)" class="st2 st3 st90 icoMap">18</text>
-                                <text transform="matrix(1 0 0 1 429.5554 267)" class="st2 st3 st90 icoMap">32</text>
-                                <text transform="matrix(1 0 0 1 437.0552 301.5998)" class="st2 st3 st90 icoMap">40</text>
-                                <text transform="matrix(1 0 0 1 437.0556 333.9052)" class="st2 st3 st90 icoMap">41</text>
-                                <text transform="matrix(1 0 0 1 459.0555 267.0001)" class="st2 st3 st90 icoMap">33</text>
-                                <text transform="matrix(1 0 0 1 478.5552 266.9998)" class="st2 st3 st90 icoMap">34</text>
-                                <text transform="matrix(1 0 0 1 476.0553 324.0945)" class="st2 st3 st90 icoMap">39</text>
-                                <text transform="matrix(1 0 0 1 511.6108 266.9999)" class="st2 st3 st90 icoMap">35</text>
-                                <text transform="matrix(1 0 0 1 511.611 314)" class="st2 st3 st90 icoMap">38</text>
-                                <text transform="matrix(1 0 0 1 548.111 267.9997)" class="st2 st3 st90 icoMap">36</text>
-                                <text transform="matrix(1 0 0 1 546.1111 296.5)" class="st2 st3 st90 icoMap">37</text>
-                                <text transform="matrix(1 0 0 1 586.0553 261.9999)" class="st2 st3 st90 icoMap">48</text>
-                                <text transform="matrix(1 0 0 1 624.5552 218.9051)" class="st2 st3 st90 icoMap">13</text>
-                                <text transform="matrix(1 0 0 1 624.5554 262.0003)" class="st2 st3 st90 icoMap">14</text>
-                                <text transform="matrix(1 0 0 1 624.5549 301.6)" class="st2 st3 st90 icoMap">15</text>
-                                <text transform="matrix(1 0 0 1 541.0552 405.729)" class="st2 st3 st90 icoMap">17</text>
-                                <text transform="matrix(1 0 0 1 606.0552 373.5)" class="st2 st3 st90 icoMap">16</text>
-                            </g>
+                            <svg width="650px" height="510px" viewBox="0 0 650 510" class="pos">
+                                <style type="text/css">
 
-                            <filter id="drop-shadow">
-                              <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
-                              <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
-                              <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
-                              <feComposite in2="offsetblur" operator="in"></feComposite>
-                              <feMerge>
-                                <feMergeNode></feMergeNode>
-                                <feMergeNode in="SourceGraphic"></feMergeNode>
-                              </feMerge>
-                            </filter>
-                        </svg>
+                                </style>
+                                <g class="n-plan__plan__svg">
+                                    <path class="st3 tip hover" original-title="-" d="M200.1,359l19,18l10-11l-18-17L200.1,359z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M293.1,366h30v15h-30V366z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M461.1,366h30v15h-30V366z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M585.1,244h17v23h-17V244z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M140.1,244h17v23h-17V244z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M168.1,274h38v37h-14.6c-8.2-7.9-15.5-15-19.4-19c-3.6-3.7-4-7-4-7V274z"/>
+                                    <path class="st3 tip hover" original-title="VITAWIN" d="M243,354l-1-0.1c-2.8-0.4-8.5-2.1-15-8.9c-8.8-9.2-22.8-21.7-34.5-33h55.5v42C248.1,354,241.9,353.9,243,354z"
+                                        />
+                                    <path class="st3 tip hover t9" original-title="SKECHERS" d="M249.1,284h39v70h-39V284z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M289.1,284h39v70h-39V284z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M329.1,274h27v80h-27V274z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M423.1,312h45v42h-45V312z"/>
+                                    <path class="st3 tip hover" original-title="МЕДВЕЖОНОК" d="M423.1,283h45v28h-45V283z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M469.1,283h30v71h-30V283z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M532.1,328.8v0.2l-26,25h-6v-69v-2h40v38L532.1,328.8z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M541.1,283h32l0,6l-32,31.2V283z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M541.1,235h32v47h-32V235z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M500.1,235h40v47h-40V235z"/>
+                                    <path class="st3 tip hover" original-title="ШЛЯПО" d="M499.1,237l-2,2h-21v43h23V237z"/>
+                                    <path class="st3 tip hover" original-title="ФИШКА" d="M458.1,239h17v43h-17V239z"/>
+                                    <path class="st3 tip hover" original-title="МЕДВЕЖОНОК" d="M423.1,239h34v43h-34V239z"/>
+                                    <path class="st3 tip hover" original-title="CROCKID" d="M329.1,239h27v34h-27V239z"/>
+                                    <path class="st3 tip hover" original-title="МАРУСЯ" d="M289.1,239h39v44h-39V239z"/>
+                                    <path class="st3 tip hover" original-title="БУДУ МАМОЙ" d="M249.1,239h39v44h-39V239z"/>
+                                    <path class="st3 tip hover" original-title="ACOOLA" d="M207.1,235v76h41v-72h-5l-3-4H207.1z"/>
+                                    <path class="st3 tip hover" original-title="KINDER" d="M168.1,235h38v38h-38V235z"/>
+                                    <path class="st3 tip hover" original-title="САБОТАЖ" d="M85.1,234h42v27h-42V234z"/>
+                                    <path class="st3 tip hover" original-title="СПОРТМАСТЕР" d="M208.1,424v47h-59c-35.3,0-64-28.7-64-64V262h42v33c0,0-1.9,12.1,6,20c17.5,17.6,53.4,51,70,67
+                                        c1.8,1.7,3.5,3.2,5,4.6L208.1,424L208.1,424z"/>
+                                    <path class="st3 tip hover" original-title="АКВАФОР" d="M209.1,424v-36.5c7.7,6.6,12,8.5,12,8.5h18v28H209.1z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M247.1,396h40v39h-40V396z"/>
+                                    <path class="st3 tip hover" original-title="ANTA" d="M288.1,396h41v74h-41V396z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M330.1,471v-75h38v107.3c-29.7-1.7-53.4-6.7-63.6-12.3h-28.4v-20H330.1z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M409.1,503.6c-5.8,0.3-11.8,0.4-18,0.4c-7.6,0-15-0.2-22-0.6V396h40V503.6z"/>
+                                    <path class="st3 tip hover t8" original-title="QUIKSILVER" d="M449.1,499.5c-11.2,1.9-24.5,3.4-39,4.1V396h39V499.5z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M491.1,471h13v20h-25.5c-5.7,3.1-15.7,6-28.5,8.3V396h41V471z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M571.1,435h-39v-22h-28v-17h16c0,0,3.1,0.5,6-2c10.2-8.9,45-45,45-45V435z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M616.1,413h21v9h8V316h-40l-33,32v87h44V413z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M645.1,276h-29v10c0,0-1.9,13.6-3,18c-2,8-7,11-7,11h39V276z"/>
+                                    <path class="st3 tip hover" original-title="-" d="M616.1,235h29v40h-29V235z"/>
+                                    <path class="st3 tip hover" original-title="КОТОФЕЙ" d="M616.1,190h29v44h-29V190z"/>
+                                    <path class="st3 tip hover" original-title="CLEANELLY" d="M583.1,141h25v38h-25V141z"/>
+                                    <path class="st3 tip hover" original-title="VASILISACRAFTS" d="M563.1,141h19v38h-19V141z"/>
+                                    <path class="st3 tip hover" original-title="KAPIKA" d="M458.1,141h41v34h-41V141z"/>
+                                    <path class="st3 tip hover" original-title="ВЕЩИ И СНЫ" d="M417.1,141v38h9l4-4h27v-34H417.1z"/>
+                                    <path class="st3 tip hover" original-title="NIKA SHOP" d="M396.1,141h20v38h-20V141z"/>
+                                    <path class="st3 tip hover" original-title="DIM" d="M375.1,141h20v38h-20V141z"/>
+                                    <path class="st3 tip hover" original-title="ШАЛУНЫ" d="M333.1,141h41v38h-41V141z"/>
+                                    <path class="st3 tip hover" original-title="GULLIVER" d="M289.1,141v34h36l3,4h4v-38H289.1z"/>
+                                    <path class="st3 tip hover t7" original-title="М.ВИДЕО" d="M289.1,49v91h211v35h5l4,4h53v-39h47v39h5v-12h31V96h-31V78h-33V65h-31V38h-166v11H289.1z"/>
+                                    <path class="st3 tip hover" original-title="REEBOK" d="M253.1,179l3-4h32V49h-29v25h-31v105H253.1z"/>
+                                    <path class="st3 tip hover" original-title="7D AVATAR" d="M187.1,141h23v38h-23V141z"/>
+                                    <path class="st3 tip hover" original-title="ДЕТСКИЙ МИР" d="M186.1,140v39h-59v48l0,0l0,0h-76l0,0v0L0.4,91.4c-0.5-2.3-1.8-8,7.4-12.1L180.1,5l0,0l0,0l0,0l0,0v55h29v1h1
+                                        v79H186.1z"/>
+                                    <text x="468" y="379"class="st2 st3 st90 icoMap">51</text>
+                                    <text transform="matrix(1 0 0 1 112.111 124.0949)" class="st90 icoMap">1</text>
+                                    <text transform="matrix(1 0 0 1 253.0555 124.0948)" class="st90 icoMap">3</text>
+                                    <text transform="matrix(1 0 0 1 429.5556 99.0949)" class="st90 icoMap">4</text>
+                                    <text transform="matrix(1 0 0 1 195.5552 163.0001)" class="st90 icoMap">2</text>
+                                    <text transform="matrix(1 0 0 1 307.0552 162.0001)" class="st90 icoMap">5</text>
+                                    <text transform="matrix(1 0 0 1 349.1109 162.0001)" class="st90 icoMap">6</text>
+                                    <text transform="matrix(1 0 0 1 381.1108 163.0001)" class="st90 icoMap">7</text>
+                                    <text transform="matrix(1 0 0 1 401.1108 163.0001)" class="st90 icoMap">8</text>
+                                    <text transform="matrix(1 0 0 1 429.5554 162.9999)" class="st90 icoMap">9</text>
+                                    <text transform="matrix(1 0 0 1 470.0553 163.0004)" class="st90 icoMap">10</text>
+                                    <text transform="matrix(1 0 0 1 565.0555 163.0001)" class="st90 icoMap">11</text>
+                                    <text transform="matrix(1 0 0 1 585.0553 163.0001)" class="st90 icoMap">12</text>
+                                    <text transform="matrix(1 0 0 1 96.1109 254)" class="st90 icoMap">26</text>
+                                    <text transform="matrix(1 0 0 1 121.1109 405.7289)" class="st90 icoMap">25</text>
+                                    <text transform="matrix(1 0 0 1 140.0553 262)" class="st90 icoMap">47</text>
+                                    <text transform="matrix(1 0 0 1 178.4732 259.4997)" class="st90 icoMap">27</text>
+                                    <text transform="matrix(1 0 0 1 182.6109 295.4999)" class="st90 icoMap">46</text>
+                                    <text transform="matrix(1 0 0 1 206.0553 367.9999)" class="st90 icoMap">51</text>
+                                    <text transform="matrix(1 0 0 1 213.0556 414.5001)" class="st90 icoMap">24</text>
+                                    <text transform="matrix(1 0 0 1 219.2982 279.9998)" class="st90 icoMap">28</text>
+                                    <text transform="matrix(1 0 0 1 221.2982 331.9999)" class="st90 icoMap">45</text>
+                                    <text transform="matrix(1 0 0 1 260.0556 266.9998)" class="st90 icoMap">29</text>
+                                    <text transform="matrix(1 0 0 1 260.0554 320.1999)" class="st90 icoMap">44</text>
+                                    <text transform="matrix(1 0 0 1 258.0555 415.4997)" class="st90 icoMap">23</text>
+                                    <text transform="matrix(1 0 0 1 299.1105 267.0001)" class="st90 icoMap">30</text>
+                                    <text transform="matrix(1 0 0 1 299.1104 320.2)" class="st90 icoMap">43</text>
+                                    <text transform="matrix(1 0 0 1 300.1105 378.9999)" class="st90 icoMap">50</text>
+                                    <text transform="matrix(1 0 0 1 300.1107 434.9999)" class="st90 icoMap">22</text>
+                                    <text transform="matrix(1 0 0 1 333.0555 263.0003)" class="st90 icoMap">31</text>
+                                    <text transform="matrix(1 0 0 1 333.0556 319.0001)" class="st90 icoMap">42</text>
+                                    <text transform="matrix(1 0 0 1 338.0556 435.0002)" class="st90 icoMap">21</text>
+                                    <text transform="matrix(1 0 0 1 381.1107 435)" class="st90 icoMap">20</text>
+                                    <text transform="matrix(1 0 0 1 423.0557 434.9999)" class="st90 icoMap">19</text>
+                                    <text transform="matrix(1 0 0 1 462.0553 435.0002)" class="st90 icoMap">18</text>
+                                    <text transform="matrix(1 0 0 1 429.5554 267)" class="st90 icoMap">32</text>
+                                    <text transform="matrix(1 0 0 1 437.0552 301.5998)" class="st90 icoMap">40</text>
+                                    <text transform="matrix(1 0 0 1 437.0556 333.9052)" class="st90 icoMap">41</text>
+                                    <text transform="matrix(1 0 0 1 459.0555 267.0001)" class="st90 icoMap">33</text>
+                                    <text transform="matrix(1 0 0 1 478.5552 266.9998)" class="st90 icoMap">34</text>
+                                    <text transform="matrix(1 0 0 1 476.0553 324.0945)" class="st90 icoMap">39</text>
+                                    <text transform="matrix(1 0 0 1 511.6108 266.9999)" class="st90 icoMap">35</text>
+                                    <text transform="matrix(1 0 0 1 511.611 314)" class="st90 icoMap">38</text>
+                                    <text transform="matrix(1 0 0 1 548.111 267.9997)" class="st90 icoMap">36</text>
+                                    <text transform="matrix(1 0 0 1 546.1111 296.5)" class="st90 icoMap">37</text>
+                                    <text transform="matrix(1 0 0 1 586.0553 261.9999)" class="st90 icoMap">48</text>
+                                    <text transform="matrix(1 0 0 1 624.5552 218.9051)" class="st90 icoMap">13</text>
+                                    <text transform="matrix(1 0 0 1 624.5554 262.0003)" class="st90 icoMap">14</text>
+                                    <text transform="matrix(1 0 0 1 624.5549 301.6)" class="st90 icoMap">15</text>
+                                    <text transform="matrix(1 0 0 1 541.0552 405.729)" class="st90 icoMap">17</text>
+                                    <text transform="matrix(1 0 0 1 606.0552 373.5)" class="st90 icoMap">16</text>
+                                </g>
+
+                                <filter id="drop-shadow">
+                                  <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
+                                  <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
+                                  <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
+                                  <feComposite in2="offsetblur" operator="in"></feComposite>
+                                  <feMerge>
+                                    <feMergeNode></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                  </feMerge>
+                                </filter>
+                            </svg>
+
+                            </div>
 
                         </div>
+
+                        <div class="n-plan__values">
+
+                            <div class="n-plan__values__container">
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color1" >
+                                        <span>Спортивные товары</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t7"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>М.ВИДЕО</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t8"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>18</p><span>QUIKSILVER</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t9"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>SKECHERS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color2">
+                                        <span>Сувениры, подарки, часы</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t7"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>М.ВИДЕО</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t8"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>18</p><span>QUIKSILVER</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t9"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>SKECHERS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color3">
+                                        <span>рестораны и кафе</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t7"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>М.ВИДЕО</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t8"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>18</p><span>QUIKSILVER</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t9"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>SKECHERS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color4">
+                                        <span>Обувь</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t7"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>М.ВИДЕО</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t8"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>18</p><span>QUIKSILVER</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t9"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>SKECHERS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color5">
+                                        <span>товары для дома</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t7"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>М.ВИДЕО</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t8"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>18</p><span>QUIKSILVER</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t9"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>SKECHERS</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                            </div>
+                            <!-- /.n-plan__values__container -->
+
+                        </div>
+                        <!-- /.n-plan__values -->
 
                     </div>
                     <!-- /.n-plan__plan -->
 
                     <div class="n-plan__plan tabs-pane" id="tab4">
 
-                        <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
-                        <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
-                        <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
-                        <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
-                        <div class="n-plan__plan__elevator icoMap"></div>
+                        <div class="n-plan__inside">
 
-                        <div class="n-plan__plan__svg n-plan__plan__svg--mod">
-                             <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
-                             <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name1">Обозначение улиц</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name2">у. Просток вашино</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name3">пр. ОБводный-урицкого</div>
+                            <div class="n-plan__plan__name n-plan__plan__name--name4">канал 1</div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit1 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit2 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit3 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit4 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit5 icoMap"></div>
+                            <div class="n-plan__plan__exit n-plan__plan__exit--exit6 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder1 icoMap"></div>
+                            <div class="n-plan__plan__ladder n-plan__plan__ladder--ladder2 icoMap"></div>
+                            <div class="n-plan__plan__elevator icoMap"></div>
 
-                        <svg width="650px" height="510px" viewBox="0 0 650 510" class="pos">
-                            <style type="text/css">
+                            <div class="n-plan__plan__svg n-plan__plan__svg--mod">
+                                 <div class="n-plan__plan__svg__fl listAnimL planL" ></div>
+                                 <div class="n-plan__plan__svg__fr listAnimR planR" ></div>
 
-                            </style>
-                            <g class="n-plan__plan__svg">
-                                <path class="st4 hover" original-title="-" d="M246.1,412h28v17h-28V412z"/>
-                                <path class="st4 hover" original-title="-" d="M297.1,311h42v31h-42V311z"/>
-                                <path class="st4 hover" original-title="-" d="M297.1,343h42v31h-42V343z"/>
-                                <path class="st4 hover" original-title="-" d="M297.1,375h42v25h-42V375z"/>
-                                <path class="st4 hover" original-title="КРОШКА КАРТОШКА" d="M319.1,401h20v29h-20V401z"/>
-                                <path class="st4 hover" original-title="MCDONALDS" d="M297.1,401h21v30h21v69.4c-15.8-2.4-28-5.7-34.6-9.4h-18.4v-44h11V401z"/>
-                                <path class="st4 hover" original-title="STARFOODS" d="M450.1,458h42v32h-42V458z"/>
-                                <path class="st4 hover" original-title="-" d="M450.1,431h42v26h-42V431z"/>
-                                <path class="st4 hover" original-title="WOK & ROLL" d="M450.1,398h42v21h-42V398z"/>
-                                <path class="st4 hover" original-title="-" d="M450.1,343h42v54h-42V343z"/>
-                                <path class="st4 hover" original-title="ДОН БАТОН" d="M450.1,306h52v36h-52V306z"/>
-                                <path class="st4 hover" original-title="ДЕТСКИЙ РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР" d="M634.1,295h-8v-22l8-1v-6h-184v39h53v88h131V295z"/>
-                                <path class="st4 hover" original-title="GAME ZONA" d="M450.1,220h41v45h-41V220z"/>
-                                <path class="st4 hover" original-title="-" d="M247.1,38v140h203v8h42v79h153V100h-53V38H247.1z"/>
-                                <path class="st4 hover" original-title="ЛЕДОВАЯ АРЕНА" d="M246.1,179h43v8h-28v29h28v177h-43v19h-40v-10h-121v-84l-1-2.7V226h-21V72L51.5,60.5L164.1,12v60h82V179z"/>
-                                <text transform="matrix(1 0 0 1 165.1665 242.4999)" class="st2 st3 st90 icoMap">1</text>
-                                <text transform="matrix(1 0 0 1 502.0552 113.8239)" class="st2 st3 st90 icoMap">2</text>
-                                <text transform="matrix(1 0 0 1 558.6111 323.9999)" class="st2 st3 st90 icoMap">4</text>
-                                <text transform="matrix(1 0 0 1 465.6107 246.7292)" class="st2 st3 st90 icoMap">3</text>
-                                <text transform="matrix(1 0 0 1 312.5554 331.4999)" class="st2 st3 st90 icoMap">14</text>
-                                <text transform="matrix(1 0 0 1 465.6107 331.4998)" class="st2 st3 st90 icoMap">5</text>
-                                <text transform="matrix(1 0 0 1 312.5553 363.7292)" class="st2 st3 st90 icoMap">13</text>
-                                <text transform="matrix(1 0 0 1 465.6106 380.7292)" class="st2 st3 st90 icoMap">6</text>
-                                <text transform="matrix(1 0 0 1 312.5551 393)" class="st2 st3 st90 icoMap">12</text>
-                                <text transform="matrix(1 0 0 1 460.1108 415.4999)" class="st2 st3 st90 icoMap">7</text>
-                                <text transform="matrix(1 0 0 1 306.1111 458.0001)" class="st2 st3 st90 icoMap">10</text>
-                                <text transform="matrix(1 0 0 1 320.5278 420.4999)" class="st2 st3 st90 icoMap">11</text>
-                                <text transform="matrix(1 0 0 1 460.1108 450.6962)" class="st2 st3 st90 icoMap">8</text>
-                                <text transform="matrix(1 0 0 1 460.1109 479.458)" class="st2 st3 st90 icoMap">9</text>
-                                <text transform="matrix(1 0 0 1 252.1107 425.7291)" class="st2 st3 st90 icoMap">15</text>
-                            </g>
+                            <svg width="650px" height="510px" viewBox="0 0 650 510" class="pos">
+                                <style type="text/css">
 
-                            <filter id="drop-shadow">
-                              <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
-                              <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
-                              <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
-                              <feComposite in2="offsetblur" operator="in"></feComposite>
-                              <feMerge>
-                                <feMergeNode></feMergeNode>
-                                <feMergeNode in="SourceGraphic"></feMergeNode>
-                              </feMerge>
-                            </filter>
-                        </svg>
+                                </style>
+                                <g class="n-plan__plan__svg">
+                                    <path class="st4 tip hover" original-title="-" d="M246.1,412h28v17h-28V412z"/>
+                                    <path class="st4 tip hover" original-title="-" d="M297.1,311h42v31h-42V311z"/>
+                                    <path class="st4 tip hover" original-title="-" d="M297.1,343h42v31h-42V343z"/>
+                                    <path class="st4 tip hover" original-title="-" d="M297.1,375h42v25h-42V375z"/>
+                                    <path class="st4 tip hover" original-title="КРОШКА КАРТОШКА" d="M319.1,401h20v29h-20V401z"/>
+                                    <path class="st4 tip hover" original-title="MCDONALDS" d="M297.1,401h21v30h21v69.4c-15.8-2.4-28-5.7-34.6-9.4h-18.4v-44h11V401z"/>
+                                    <path class="st4 tip hover" original-title="STARFOODS" d="M450.1,458h42v32h-42V458z"/>
+                                    <path class="st4 tip hover" original-title="-" d="M450.1,431h42v26h-42V431z"/>
+                                    <path class="st4 tip hover" original-title="WOK & ROLL" d="M450.1,398h42v21h-42V398z"/>
+                                    <path class="st4 tip hover" original-title="-" d="M450.1,343h42v54h-42V343z"/>
+                                    <path class="st4 tip hover" original-title="ДОН БАТОН" d="M450.1,306h52v36h-52V306z"/>
+                                    <path class="st4 tip hover t11" original-title="ДЕТСКИЙ РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР" d="M634.1,295h-8v-22l8-1v-6h-184v39h53v88h131V295z"/>
+                                    <path class="st4 tip hover t12" original-title="GAME ZONA" d="M450.1,220h41v45h-41V220z"/>
+                                    <path class="st4 tip hover" original-title="-" d="M247.1,38v140h203v8h42v79h153V100h-53V38H247.1z"/>
+                                    <path class="st4 tip hover t10" original-title="ЛЕДОВАЯ АРЕНА" d="M246.1,179h43v8h-28v29h28v177h-43v19h-40v-10h-121v-84l-1-2.7V226h-21V72L51.5,60.5L164.1,12v60h82V179z"/>
+                                    <text transform="matrix(1 0 0 1 165.1665 242.4999)" class="st90 icoMap">1</text>
+                                    <text transform="matrix(1 0 0 1 502.0552 113.8239)" class="st90 icoMap">2</text>
+                                    <text transform="matrix(1 0 0 1 558.6111 323.9999)" class="st90 icoMap">4</text>
+                                    <text transform="matrix(1 0 0 1 465.6107 246.7292)" class="st90 icoMap">3</text>
+                                    <text transform="matrix(1 0 0 1 312.5554 331.4999)" class="st90 icoMap">14</text>
+                                    <text transform="matrix(1 0 0 1 465.6107 331.4998)" class="st90 icoMap">5</text>
+                                    <text transform="matrix(1 0 0 1 312.5553 363.7292)" class="st90 icoMap">13</text>
+                                    <text transform="matrix(1 0 0 1 465.6106 380.7292)" class="st90 icoMap">6</text>
+                                    <text transform="matrix(1 0 0 1 312.5551 393)" class="st90 icoMap">12</text>
+                                    <text transform="matrix(1 0 0 1 460.1108 415.4999)" class="st90 icoMap">7</text>
+                                    <text transform="matrix(1 0 0 1 306.1111 458.0001)" class="st90 icoMap">10</text>
+                                    <text transform="matrix(1 0 0 1 320.5278 420.4999)" class="st90 icoMap">11</text>
+                                    <text transform="matrix(1 0 0 1 460.1108 450.6962)" class="st90 icoMap">8</text>
+                                    <text transform="matrix(1 0 0 1 460.1109 479.458)" class="st90 icoMap">9</text>
+                                    <text transform="matrix(1 0 0 1 252.1107 425.7291)" class="st90 icoMap">15</text>
+                                </g>
+
+                                <filter id="drop-shadow">
+                                  <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"></feGaussianBlur>
+                                  <feOffset dx="3" dy="4" result="offsetblur"></feOffset>
+                                  <feFlood flood-color="rgba(0,0,0,0.3)"></feFlood>
+                                  <feComposite in2="offsetblur" operator="in"></feComposite>
+                                  <feMerge>
+                                    <feMergeNode></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                  </feMerge>
+                                </filter>
+                            </svg>
+
+                            </div>
 
                         </div>
+
+                        <div class="n-plan__values">
+
+                            <div class="n-plan__values__container">
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color1" >
+                                        <span>Спортивные товары</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t10"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>1</p><span>ЛЕДОВАЯ АРЕНА</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t11"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>3</p><span>ДЕТСКИЙ РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t12"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>GAME ZONA</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color2">
+                                        <span>Сувениры, подарки, часы</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t1"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>8</p><span>SPAR</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t2"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>44</p><span>ILE DE BEAUTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t3"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>22</p><span>MASCOTTE</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color3">
+                                        <span>рестораны и кафе</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t10"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>1</p><span>ЛЕДОВАЯ АРЕНА</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t11"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>3</p><span>ДЕТСКИЙ РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t12"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>GAME ZONA</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color4">
+                                        <span>Обувь</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t10"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>1</p><span>ЛЕДОВАЯ АРЕНА</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t11"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>3</p><span>ДЕТСКИЙ РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t12"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>GAME ZONA</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                                <div class="n-plan__values__value">
+                                    <div class="n-plan__values__header n-plan__values__header--color5">
+                                        <span>товары для дома</span>
+                                    </div>
+                                    <div class="n-plan__values__ins">
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t10"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>1</p><span>ЛЕДОВАЯ АРЕНА</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t11"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>3</p><span>ДЕТСКИЙ РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="n-plan__values__check">
+                                            <div class="n-plan__values__box">
+                                                <a href=".t12"></a>
+                                                <div class="n-plan__values__cont">
+                                                    <p>4</p><span>GAME ZONA</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.n-plan__values__value -->
+
+                            </div>
+                            <!-- /.n-plan__values__container -->
+
+                        </div>
+                        <!-- /.n-plan__values -->
 
                     </div>
                     <!-- /.n-plan__plan -->
                 </div>
                 <!-- /.tabs-content -->
 
-                <div class="n-plan__values">
-
-                    <div class="n-plan__values__container">
-
-                        <div class="n-plan__values__value">
-                            <div class="n-plan__values__header n-plan__values__header--color1" >
-                                <span>Спортивные товары</span>
-                            </div>
-                            <div class="n-plan__values__ins">
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>8</p><span>Спотрмастер</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>28</p><span>Фитленд</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>99</p><span>Спорт галерея памяти КМС Анчуткина</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.n-plan__values__value -->
-                        <div class="n-plan__values__value">
-                            <div class="n-plan__values__header n-plan__values__header--color2">
-                                <span>Сувениры, подарки, часы</span>
-                            </div>
-                            <div class="n-plan__values__ins">
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>8</p><span>Спотрмастер</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>28</p><span>Фитленд</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>99</p><span>Спорт галерея памяти КМС Анчуткина</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.n-plan__values__value -->
-
-                        <div class="n-plan__values__value">
-                            <div class="n-plan__values__header n-plan__values__header--color3">
-                                <span>рестораны и кафе</span>
-                            </div>
-                            <div class="n-plan__values__ins">
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>8</p><span>Спотрмастер</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>28</p><span>Фитленд</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>99</p><span>Спорт галерея памяти КМС Анчуткина</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.n-plan__values__value -->
-
-                        <div class="n-plan__values__value">
-                            <div class="n-plan__values__header n-plan__values__header--color4">
-                                <span>Обувь</span>
-                            </div>
-                            <div class="n-plan__values__ins">
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>8</p><span>Спотрмастер</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>28</p><span>Фитленд</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>99</p><span>Спорт галерея памяти КМС Анчуткина</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.n-plan__values__value -->
-
-                        <div class="n-plan__values__value">
-                            <div class="n-plan__values__header n-plan__values__header--color5">
-                                <span>товары для дома</span>
-                            </div>
-                            <div class="n-plan__values__ins">
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>8</p><span>Спотрмастер</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>28</p><span>Фитленд</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="n-plan__values__check">
-                                    <div class="n-plan__values__box">
-                                        <input type="radio">
-                                        <div class="n-plan__values__cont">
-                                            <p>99</p><span>Спорт галерея памяти КМС Анчуткина</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.n-plan__values__value -->
-
-                    </div>
-
-                </div>
-                <!-- /.n-plan__values -->
             </div>
             <!-- /.n-plan__container -->
 

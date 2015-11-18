@@ -1,4 +1,4 @@
-window.onload = function(){
+$(document).ready(function() {
 
 function Map(elem) {
     var $toShow =  $('.icoMap');
@@ -25,7 +25,7 @@ function Map(elem) {
            if (l!=$items.length && !self.stop) {
                setTimeout(function(){
                    i = mass[l];
-                   $items.eq(i).show('slow');
+                   $items.eq(i).animate({'opacity':'1'},'fast');
                    self.animateMap();
                    l++;
                },self.speed);
@@ -34,7 +34,7 @@ function Map(elem) {
                $toShow.css('opacity','0');
            } else {
                $toShow.animate({'opacity':'1'},'slow');
-               $items.show('slow');
+               $items.animate({'opacity':'1'},'fast');
                l=0;
            }
         }
@@ -47,7 +47,7 @@ function Map(elem) {
     };
     this.destroy = function() {
         self.stop = true;
-        $(self.class).find('.hover').hide();
+        $(self.class).find('.hover').css('opacity','0');
         $toShow.css('opacity','0');
         $(self.class).find('.planL').attr("class","n-plan__plan__svg__fl listAnimL planL");
         $(self.class).find('.planR').attr("class","n-plan__plan__svg__fr listAnimR planR");
@@ -72,6 +72,7 @@ tabby.init({
                 setTimeout(function(){
                     map1.animateMap();
                 },1000);
+                $('.tooltipster-content').hide();
             break;
             case '#tab2':
                 map1.destroy();
@@ -83,6 +84,7 @@ tabby.init({
                 setTimeout(function(){
                     map2.animateMap();
                 },1000);
+                $('.tooltipster-content').hide();
             break;
             case '#tab3':
                 map1.destroy();
@@ -94,6 +96,7 @@ tabby.init({
                 setTimeout(function(){
                     map3.animateMap();
                 },1000);
+                $('.tooltipster-content').hide();
             break;
             case '#tab4':
                 map1.destroy();
@@ -105,6 +108,7 @@ tabby.init({
                 setTimeout(function(){
                     map4.animateMap();
                 },1000);
+                $('.tooltipster-content').hide();
             break;
         }
     }
@@ -118,113 +122,72 @@ setTimeout(function(){
     map1.animateMap();
 },1000);
 
-
-$('.st1').tooltipster({
-   content: $('<img src="img/tmp/master.png"><span class="tool-header">'+
+var tip = $('.tip').qtip({
+    content: {
+        text: '<img src="img/tmp/master.png"><span class="tool-header">'+
    'СпортМастер равнение по верху</span>' +
    '<a href="#" class="tool-text">Презентация зимней коллекции обуви пример ссылки на последнюю новость</a>' +
    '<div class="tool-timeH">Режим работы</div>' +
    '<div class="tool-time">Пн-Пт:  9:00 - 19:00</div>' +
    '<div class="tool-time">Сб-Вс:  12:00 - 19:00</div>' +
-   '<div class="tool-close"></div>'),
-   theme: 'n-plan__tooltip',
-   interactive: true,
-   animation: 'fade',
-   delay: 200,
-   position: 'right',
-   touchDevices: false,
-   trigger: 'click',
-   functionReady: function() {
-       $('.tool-close').click(function(){
-           $('.st1').tooltipster('hide');
-       });
-   }
+   '<div class="tool-close"></div>'
+    },
+    style: {
+      classes: 'tooltipster-content',
+      def: false,
+    },
+    position: {
+      my: 'bottom center',
+      at: 'top center',
+    },
+    show: {
+        event: 'click',
+        solo: true,
+    },
+    hide: {
+        event: 'click',
+    },
+    events: {
+        show: function(event, api){
+            $('.tool-close').click(function(){
+                api.hide();
+            })
+        },
+        hide: function(event, api) {
+           var $elem = $('.tip');
+           for (var j=0; j<$elem.length; j++) {
+               var $reg = $elem.eq(j).attr('class').split(' ');
+                for (var i=0; i<$reg.length; i++) {
+                    switch ($reg[i]) {
+                        case 'st1':
+                        var elem = '.'+$reg[i];
+                           $(elem).css('fill','#9C5897');
+                        break;
+                        case 'st2':
+                        var elem = '.'+$reg[i];
+                           $(elem).css('fill','#069cd8');
+                        break;
+                        case 'st3':
+                        var elem = '.'+$reg[i];
+                           $(elem).css('fill','#b22e82');
+                        break;
+                        case 'st4':
+                        var elem = '.'+$reg[i];
+                           $(elem).css('fill','#ed8e23');
+                        break;
+                    }
+                }
+            }
+        }
+    }
 });
 
-$('.st1').tipsy({
-    //fallback: "СпортМастер",
+$('.tip').tipsy({
     gravity: 's',
 });
 
-$('.st2').tooltipster({
-   content: $('<img src="img/tmp/master.png"><span class="tool-header">'+
-   'СпортМастер равнение по верху</span>' +
-   '<a href="#" class="tool-text">Презентация зимней коллекции обуви пример ссылки на последнюю новость</a>' +
-   '<div class="tool-timeH">Режим работы</div>' +
-   '<div class="tool-time">Пн-Пт:  9:00 - 19:00</div>' +
-   '<div class="tool-time">Сб-Вс:  12:00 - 19:00</div>' +
-   '<div class="tool-close"></div>'),
-   theme: 'n-plan__tooltip',
-   interactive: true,
-   animation: 'fade',
-   delay: 200,
-   position: 'right',
-   touchDevices: false,
-   trigger: 'click',
-   functionReady: function() {
-       $('.tool-close').click(function(){
-           $('.st2').tooltipster('hide');
-       });
-   }
-});
-
-$('.st2').tipsy({
-    //fallback: "СпортМастер",
-    gravity: 's',
-});
-
-$('.st3').tooltipster({
-   content: $('<img src="img/tmp/master.png"><span class="tool-header">'+
-   'СпортМастер равнение по верху</span>' +
-   '<a href="#" class="tool-text">Презентация зимней коллекции обуви пример ссылки на последнюю новость</a>' +
-   '<div class="tool-timeH">Режим работы</div>' +
-   '<div class="tool-time">Пн-Пт:  9:00 - 19:00</div>' +
-   '<div class="tool-time">Сб-Вс:  12:00 - 19:00</div>' +
-   '<div class="tool-close"></div>'),
-   theme: 'n-plan__tooltip',
-   interactive: true,
-   animation: 'fade',
-   delay: 200,
-   position: 'right',
-   touchDevices: false,
-   trigger: 'click',
-   functionReady: function() {
-       $('.tool-close').click(function(){
-           $('.st3').tooltipster('hide');
-       });
-   }
-});
-
-$('.st3').tipsy({
-    //fallback: "СпортМастер",
-    gravity: 's',
-});
-
-$('.st4').tooltipster({
-   content: $('<img src="img/tmp/master.png"><span class="tool-header">'+
-   'СпортМастер равнение по верху</span>' +
-   '<a href="#" class="tool-text">Презентация зимней коллекции обуви пример ссылки на последнюю новость</a>' +
-   '<div class="tool-timeH">Режим работы</div>' +
-   '<div class="tool-time">Пн-Пт:  9:00 - 19:00</div>' +
-   '<div class="tool-time">Сб-Вс:  12:00 - 19:00</div>' +
-   '<div class="tool-close"></div>'),
-   theme: 'n-plan__tooltip',
-   interactive: true,
-   animation: 'fade',
-   delay: 200,
-   position: 'right',
-   touchDevices: false,
-   trigger: 'click',
-   functionReady: function() {
-       $('.tool-close').click(function(){
-           $('.st4').tooltipster('hide');
-       });
-   }
-});
-
-$('.st4').tipsy({
-    //fallback: "СпортМастер",
-    gravity: 's',
+$('.tip').click(function(){
+    var attr = $(this).attr('class');
 });
 
 $('.n-plan__values__header').click(function(){
@@ -240,6 +203,34 @@ $('.n-plan__values__header').click(function(){
         });
     }
 
+});
+
+$('.n-plan__values__ins').find('a').click(function(e){
+    e.preventDefault();
+    var attr = $(this).attr('href');
+    var $elem = $(attr);
+    var api = $elem.qtip('api');
+    api.show();
+    var reg = $elem.attr('class').split(' ');
+    for (var i=0; i<reg.length; i++) {
+        switch (reg[i]) {
+            case 'st1':
+               $elem.css('fill','#82427e');
+            break;
+            case 'st2':
+               $elem.css('fill','#037bab');
+            break;
+            case 'st3':
+               $elem.css('fill','#7f215d');
+            break;
+            case 'st4':
+               $elem.css('fill','#c5751c');
+            break;
+
+        }
+    }
+    $('.n-plan__values__cont').removeClass('n-plan__values__cont--active');
+    $(this).parent().find('.n-plan__values__cont').addClass('n-plan__values__cont--active');
 })
 
-};
+});
