@@ -58,57 +58,86 @@ var map1 = new Map('#tab1');
 var map2 = new Map('#tab2');
 var map3 = new Map('#tab3');
 var map4 = new Map('#tab4');
+var timer;
 
 tabby.init({
     callback: function ( toggle, tabID ) {
         switch (tabID) {
             case '#tab1':
-                map1.destroy();
-                map2.destroy();
-                map3.destroy();
-                map4.destroy();
-                map1.showField();
-                map1.stop=false;
-                setTimeout(function(){
-                    map1.animateMap();
-                },1000);
-                $('.tooltipster-content').hide();
+                $('#tab2').removeClass('selected');
+                $('#tab3').removeClass('selected');
+                $('#tab4').removeClass('selected');
+                if (!$(tabID).hasClass('selected')) {
+                    map1.destroy();
+                    map2.destroy();
+                    map3.destroy();
+                    map4.destroy();
+                    clearTimeout(timer);
+                    map1.stop=false;
+                    map1.showField();
+                    timer = setTimeout(function(){
+                        map1.animateMap();
+                    },1000);
+                    $('.tooltipster-content').hide();
+                    $(tabID).addClass('selected');
+                }
             break;
             case '#tab2':
-                map1.destroy();
-                map2.destroy();
-                map3.destroy();
-                map4.destroy();
-                map2.stop=false;
-                map2.showField();
-                setTimeout(function(){
-                    map2.animateMap();
-                },1000);
-                $('.tooltipster-content').hide();
+                $('#tab1').removeClass('selected');
+                $('#tab3').removeClass('selected');
+                $('#tab4').removeClass('selected');
+                if (!$(tabID).hasClass('selected')) {
+                    map1.destroy();
+                    map2.destroy();
+                    map3.destroy();
+                    map4.destroy();
+                    clearTimeout(timer);
+                    map2.stop=false;
+                    map2.showField();
+                    timer = setTimeout(function(){
+                        map2.animateMap();
+                    },1000);
+                    $('.tooltipster-content').hide();
+                    $(tabID).addClass('selected');
+                }
             break;
             case '#tab3':
-                map1.destroy();
-                map2.destroy();
-                map3.destroy();
-                map4.destroy();
-                map3.stop=false;
-                map3.showField();
-                setTimeout(function(){
-                    map3.animateMap();
-                },1000);
-                $('.tooltipster-content').hide();
+                $('#tab1').removeClass('selected');
+                $('#tab2').removeClass('selected');
+                $('#tab4').removeClass('selected');
+                if (!$(tabID).hasClass('selected')) {
+                    map1.destroy();
+                    map2.destroy();
+                    map3.destroy();
+                    map4.destroy();
+                    map3.stop=false;
+                    map3.showField();
+                    clearTimeout(timer);
+                    timer = setTimeout(function(){
+                        map3.animateMap();
+                    },1000);
+                    $('.tooltipster-content').hide();
+                    $(tabID).addClass('selected');
+                }
             break;
             case '#tab4':
-                map1.destroy();
-                map2.destroy();
-                map3.destroy();
-                map4.destroy();
-                map4.stop=false;
-                map4.showField();
-                setTimeout(function(){
-                    map4.animateMap();
-                },1000);
-                $('.tooltipster-content').hide();
+                $('#tab1').removeClass('selected');
+                $('#tab2').removeClass('selected');
+                $('#tab3').removeClass('selected');
+                if (!$(tabID).hasClass('selected')) {
+                    map1.destroy();
+                    map2.destroy();
+                    map3.destroy();
+                    map4.destroy();
+                    map4.stop=false;
+                    map4.showField();
+                    clearTimeout(timer);
+                    timer = setTimeout(function(){
+                        map4.animateMap();
+                    },1000);
+                    $('.tooltipster-content').hide();
+                    $(tabID).addClass('selected');
+                }
             break;
         }
     }
@@ -118,9 +147,10 @@ tabby.init({
 setTimeout(function(){
     map1.showField();
 },25);
-setTimeout(function(){
+timer = setTimeout(function(){
     map1.animateMap();
 },1000);
+$('#tab1').addClass('selected');
 
 var tip = $('.tip').qtip({
     content: {
