@@ -75,6 +75,7 @@ var tip = $('.tip').qtip({
                     }
                 }
             }
+            $('.n-plan__values__cont').removeClass('n-plan__values__cont--active');
         }
     }
 });
